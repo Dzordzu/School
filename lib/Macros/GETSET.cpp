@@ -8,7 +8,7 @@
     private: \
        type _##var; \
     public: \
-       type get##var() \
+       type get##var() const\
        {\
           return _##var; \
        }\
