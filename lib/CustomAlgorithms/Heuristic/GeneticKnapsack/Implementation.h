@@ -9,7 +9,11 @@
 #include "../../../Macros/GETSET.cpp"
 
 class Implementation {
+    GETSET(uint8_t, Size)
     GET(GeneticAlgorithm, Algo);
+
+public:
+    void findBestSolution();
 };
 
 

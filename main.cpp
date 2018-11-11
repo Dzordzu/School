@@ -8,7 +8,7 @@ int main() {
     // CustomAlgorithms::Heuristic::GeneticKnapsack::
     Implementation knapsack;
 
-//    knapsack.setSize(5);
+    knapsack.setSize(5);
 //
 //    knapsack.setPossibleItems();
 //    knapsack.generatePossibleItems(4);
@@ -18,7 +18,7 @@ int main() {
     knapsack.getAlgo().setMutationProbability(0.1);
     knapsack.getAlgo().setGenerationsAmount(2);
 //
-//    knapsack.findBestSolution();
+    knapsack.findBestSolution();
 
     return 0;
 }
