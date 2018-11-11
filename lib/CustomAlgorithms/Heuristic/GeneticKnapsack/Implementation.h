@@ -5,9 +5,11 @@
 #ifndef SCHOOL_IMPLEMENTATION_H
 #define SCHOOL_IMPLEMENTATION_H
 
+#include "GeneticAlgorithm.h"
+#include "../../../Macros/GETSET.cpp"
+
 class Implementation {
-
-
+    GET(GeneticAlgorithm, algo);
 };
 
 
