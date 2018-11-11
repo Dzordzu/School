@@ -29,9 +29,9 @@ int main() {
     algo.setPopulationSize(4);
     algo.setCrossingProbability(0.25);
     algo.setMutationProbability(0.1);
-    algo.setGenerationLimit(10);
+    algo.setGenerationLimit(2);
 
-
+    algo.init();
 
 
 

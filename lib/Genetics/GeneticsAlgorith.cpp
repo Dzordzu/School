@@ -53,5 +53,23 @@ namespace CustomAlgorithms {
             GeneticsAlgorith::mutationProbability = mutationProbability;
         }
 
+        void GeneticsAlgorith::generatePopulation() {
+            for(int i=0; i<this->populationSize; i++) {
+                Instance instance;
+                instance.setWorkingSet(&this->workingSet);
+                instance.setRandomGenotype();
+            }
+        }
+
+        void GeneticsAlgorith::init() {
+
+            this->generatePopulation();
+
+            for(int i=0; i<this->generationLimit; i++) {
+
+            }
+        }
+
+
     }
 }
