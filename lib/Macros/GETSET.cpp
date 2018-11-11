@@ -39,9 +39,9 @@
     private: \
        type _##var; \
     public: \
-       type set##var() \
+       void set##var(type val) \
        {\
-          return _##var; \
+          _##var = val; \
        }
 
 #endif //SET
