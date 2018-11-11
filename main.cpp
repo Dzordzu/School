@@ -10,8 +10,8 @@ int main() {
 
     knapsack.setSize(5);
 //
-//    knapsack.setPossibleItems();
-//    knapsack.generatePossibleItems(4);
+//    knapsack.setItems();
+//    knapsack.generateItems(4);
 //
     knapsack.getAlgo().setPopulationSize(2);
     knapsack.getAlgo().setCrossingProbability(0.25);
