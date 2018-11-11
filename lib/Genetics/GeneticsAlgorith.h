@@ -15,7 +15,6 @@ namespace CustomAlgorithms {
             uint8_t populationSize;
         public:
             uint8_t getPopulationSize() const;
-
             void setPopulationSize(uint8_t populationSize);
 
         public:

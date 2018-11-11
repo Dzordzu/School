@@ -21,6 +21,5 @@ namespace CustomAlgorithms {
             GeneticsAlgorith::populationSize = populationSize;
         }
 
-        GeneticsAlgorith::GeneticsAlgorith() {}
     }
 }
