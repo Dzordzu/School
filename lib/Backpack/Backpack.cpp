@@ -8,18 +8,15 @@ namespace Backpack {
 
     bool Backpack::addItem(Item item) {
 
-        /*
-         * I should be crucified for the following lines
-         */
-        actual_size += item.getSize();
-        backpack.emplace_back(item);
-
-        if(actual_size> max_size) {
+        if(actual_size + item.getSize()> max_size) {
             summed_value = 0;
             return false;
         }
 
+        actual_size += item.getSize();
+        backpack.emplace_back(item);
         summed_value += item.getValue();
+
         return true;
     }
 
