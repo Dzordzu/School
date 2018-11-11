@@ -5,9 +5,15 @@
 #ifndef SCHOOL_GENETICSALGORITH_H
 #define SCHOOL_GENETICSALGORITH_H
 
-namespace Backpack {
-    class GeneticsAlgorith {
+#include <vector>
+#include "../Backpack/Item.h"
 
+namespace CustomAlgorithms {
+    class GeneticsAlgorith {
+        std::vector<Backpack::Item> working_set;
+    public:
+        const std::vector<Backpack::Item> &getWorking_set() const;
+        void setWorking_set(const std::vector<Backpack::Item> &working_set);
     };
 }
 
