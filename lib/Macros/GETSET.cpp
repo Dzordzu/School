@@ -1,5 +1,6 @@
 //
 // Created by dzordzu on 11.11.18.
+// TODO Add header implementation
 //
 
 #ifndef GETSET
