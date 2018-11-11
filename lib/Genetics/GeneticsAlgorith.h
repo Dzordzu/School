@@ -14,6 +14,8 @@ namespace CustomAlgorithms {
             std::vector<Backpack::Item> workingSet;
             uint8_t populationSize;
             uint8_t generationLimit;
+            uint8_t backpackSize;
+            double crossingProbability, mutationProbability;
         public:
             uint8_t getGenerationLimit() const;
             void setGenerationLimit(uint8_t generationLimit);
@@ -24,16 +26,11 @@ namespace CustomAlgorithms {
             double getMutationProbability() const;
             void setMutationProbability(double mutationProbability);
 
-        private:
-            uint8_t backpackSize;
-            double crossingProbability, mutationProbability;
-        public:
-            uint8_t getPopulationSize() const;
-            void setPopulationSize(uint8_t populationSize);
-
         public:
             const std::vector<Backpack::Item> &getWorkingSet() const;
             void setWorkingSet(const std::vector<Backpack::Item> &working_set);
+            uint8_t getPopulationSize() const;
+            void setPopulationSize(uint8_t populationSize);
         };
     }
 }
