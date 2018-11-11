@@ -1,10 +1,13 @@
 #include <iostream>
 #include "lib/Backpack/Item.h"
 #include "lib/Backpack/Backpack.h"
+#include "lib/Genetics/GeneticsAlgorith.h"
 
 int main() {
 
     Backpack::Backpack backpack = Backpack::Backpack(5);
+
+    CustomAlgorithms::GeneticsAlgorith algo;
 
     std::vector<Backpack::Item> items {
         Backpack::Item(5, 4),
@@ -12,6 +15,8 @@ int main() {
         Backpack::Item(4, 3),
         Backpack::Item(3, 2)
     };
+
+    algo.setWorkingSet(items);
 
     /* Try random:
      * std::vector<Backpack::Item> items = Backpack::ItemFactory::getInstance().generateRandomItems(10);
