@@ -9,7 +9,7 @@
 #include "../../../Macros/GETSET.cpp"
 
 class Implementation {
-    GET(GeneticAlgorithm, algo);
+    GET(GeneticAlgorithm, Algo);
 };
 
 

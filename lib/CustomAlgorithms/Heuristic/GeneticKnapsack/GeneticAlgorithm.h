@@ -13,6 +13,7 @@ class GeneticAlgorithm {
     GETSET(uint8_t , PopulationSize);
     GETSET(float, CrossingProbability);
     GETSET(float, MutationProbability);
+    GETSET(uint8_t, GenerationsAmount)
 };
 
 

@@ -6,16 +6,17 @@ int main() {
     // TODO
     // After all wrap to:
     // CustomAlgorithms::Heuristic::GeneticKnapsack::
-//    Implementation knapsack;
+    Implementation knapsack;
+
 //    knapsack.setSize(5);
 //
 //    knapsack.setPossibleItems();
 //    knapsack.generatePossibleItems(4);
 //
-//    knapsack.setPopulationSize(4);
-//    knapsack.setCrossingProbability(0.25);
-//    knapsack.setMutationProbability(0.1);
-//    knapsack.setGenerationsAmount(2);
+    knapsack.getAlgo().setPopulationSize(2);
+    knapsack.getAlgo().setCrossingProbability(0.25);
+    knapsack.getAlgo().setMutationProbability(0.1);
+    knapsack.getAlgo().setGenerationsAmount(2);
 //
 //    knapsack.findBestSolution();
 
