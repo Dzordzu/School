@@ -13,9 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="985f0cad-0331-44fb-ba81-f6055854d415" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/lib/Genetics/GeneticsAlgorith.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Genetics/GeneticsAlgorith.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Genetics/GeneticsAlgorith.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Genetics/GeneticsAlgorith.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -84,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/Genetics/GeneticsAlgorith.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+            <state relative-caret-position="243">
+              <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
               <folding>
                 <element signature="e#111#128#0" expanded="true" />
               </folding>
@@ -96,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/Genetics/GeneticsAlgorith.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="35" />
+            <state>
+              <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -126,8 +124,8 @@
         <option value="$PROJECT_DIR$/lib/Genetics/Instance.h" />
         <option value="$PROJECT_DIR$/lib/Genetics/Instance.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/lib/Genetics/GeneticsAlgorith.h" />
         <option value="$PROJECT_DIR$/lib/Genetics/GeneticsAlgorith.cpp" />
+        <option value="$PROJECT_DIR$/lib/Genetics/GeneticsAlgorith.h" />
       </list>
     </option>
   </component>
@@ -227,12 +225,12 @@
       <option name="presentableId" value="Default" />
       <updated>1541953149092</updated>
       <workItem from="1541953167650" duration="10556000" />
-      <workItem from="1541963910444" duration="3361000" />
+      <workItem from="1541963910444" duration="3385000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13917000" />
+    <option name="totallyTimeSpent" value="13941000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -354,20 +352,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Genetics/GeneticsAlgorith.h">
+    <entry file="file://$PROJECT_DIR$/lib/Genetics/GeneticsAlgorith.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding>
-            <element signature="e#111#128#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Genetics/GeneticsAlgorith.cpp">
+    <entry file="file://$PROJECT_DIR$/lib/Genetics/GeneticsAlgorith.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="35" />
+        <state relative-caret-position="243">
+          <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+          <folding>
+            <element signature="e#111#128#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

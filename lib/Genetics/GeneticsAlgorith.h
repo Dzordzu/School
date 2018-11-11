@@ -16,19 +16,12 @@ namespace CustomAlgorithms {
             uint8_t generationLimit;
         public:
             uint8_t getGenerationLimit() const;
-
             void setGenerationLimit(uint8_t generationLimit);
-
             uint8_t getBackpackSize() const;
-
             void setBackpackSize(uint8_t backpackSize);
-
             double getCrossingProbability() const;
-
             void setCrossingProbability(double crossingProbability);
-
             double getMutationProbability() const;
-
             void setMutationProbability(double mutationProbability);
 
         private:
