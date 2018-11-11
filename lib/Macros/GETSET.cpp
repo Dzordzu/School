@@ -2,6 +2,8 @@
 // Created by dzordzu on 11.11.18.
 //
 
+#ifndef GETSET
+
 #define GETSET(type, var) \
     private: \
        type _##var; \
@@ -15,6 +17,10 @@
           _##var = val; \
        }
 
+#endif //GETSET
+
+#ifndef GET
+
 #define GET(type, var) \
     private: \
        type _##var; \
@@ -24,6 +30,10 @@
           return _##var; \
        }
 
+#endif //GET
+
+#ifndef SET
+
 #define SET(type, var) \
     private: \
        type _##var; \
@@ -32,3 +42,5 @@
        {\
           return _##var; \
        }
+
+#endif //SET
