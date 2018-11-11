@@ -7,7 +7,7 @@ int main() {
 
     Backpack::Backpack backpack = Backpack::Backpack(5);
 
-    CustomAlgorithms::GeneticsAlgorith algo;
+    CustomAlgorithms::Genetics::GeneticsAlgorith algo;
 
     std::vector<Backpack::Item> items {
         Backpack::Item(5, 4),
@@ -16,8 +16,6 @@ int main() {
         Backpack::Item(3, 2)
     };
 
-    algo.setWorkingSet(items);
-
     /* Try random:
      * std::vector<Backpack::Item> items = Backpack::ItemFactory::getInstance().generateRandomItems(10);
      */
@@ -25,6 +23,11 @@ int main() {
     for(int i=0; i<items.size(); i++) {
         std::cout<<"Item " + std::to_string(i) + ": Size(" << items[i].getSize() <<"), Value(" <<items[i].getValue() << ")" <<std::endl;
     }
+
+    algo.setWorkingSet(items);
+    algo.
+
+
 
 
 
