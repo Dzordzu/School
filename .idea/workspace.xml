@@ -15,6 +15,7 @@
     <list default="true" id="985f0cad-0331-44fb-ba81-f6055854d415" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/lib/Genetics/GeneticsAlgorith.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Genetics/GeneticsAlgorith.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Genetics/GeneticsAlgorith.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Genetics/GeneticsAlgorith.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -37,9 +38,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="1745" />
+          <entry key="cpp" value="1906" />
           <entry key="gitignore" value="42" />
-          <entry key="h" value="2003" />
+          <entry key="h" value="2082" />
           <entry key="txt" value="16" />
         </counts>
       </usages-collector>
@@ -47,7 +48,7 @@
         <counts>
           <entry key="CMakeLists.txt" value="16" />
           <entry key="Doxygen file" value="1" />
-          <entry key="ObjectiveC" value="3747" />
+          <entry key="ObjectiveC" value="3987" />
           <entry key="PLAIN_TEXT" value="42" />
         </counts>
       </usages-collector>
@@ -55,7 +56,7 @@
         <counts>
           <entry key="Makefile" value="1" />
           <entry key="School (disassembly)" value="2" />
-          <entry key="cpp" value="8" />
+          <entry key="cpp" value="10" />
           <entry key="gitignore" value="1" />
           <entry key="h" value="7" />
         </counts>
@@ -63,7 +64,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Disassembly" value="2" />
-          <entry key="ObjectiveC" value="15" />
+          <entry key="ObjectiveC" value="17" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
@@ -72,19 +73,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="5" column="239" selection-start-line="5" selection-start-column="239" selection-end-line="5" selection-end-column="239" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+            <state relative-caret-position="199">
+              <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="31" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -93,43 +85,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/Genetics/GeneticsAlgorith.cpp">
+        <entry file="file://$PROJECT_DIR$/lib/Genetics/GeneticsAlgorith.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/Genetics/Instance.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/Genetics/Instance.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="168">
+              <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
               <folding>
-                <element signature="e#95#112#0" expanded="true" />
+                <element signature="e#111#128#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/Genetics/GeneticsAlgorith.h">
+        <entry file="file://$PROJECT_DIR$/lib/Genetics/GeneticsAlgorith.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-              <folding>
-                <element signature="e#111#128#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="270">
+              <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -152,11 +123,11 @@
         <option value="$PROJECT_DIR$/lib/Backpack/Backpack.h" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/lib/Backpack/Backpack.cpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/lib/Genetics/Instance.h" />
         <option value="$PROJECT_DIR$/lib/Genetics/Instance.cpp" />
-        <option value="$PROJECT_DIR$/lib/Genetics/GeneticsAlgorith.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/lib/Genetics/GeneticsAlgorith.h" />
+        <option value="$PROJECT_DIR$/lib/Genetics/GeneticsAlgorith.cpp" />
       </list>
     </option>
   </component>
@@ -256,12 +227,12 @@
       <option name="presentableId" value="Default" />
       <updated>1541953149092</updated>
       <workItem from="1541953167650" duration="10556000" />
-      <workItem from="1541963910444" duration="2594000" />
+      <workItem from="1541963910444" duration="3361000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13150000" />
+    <option name="totallyTimeSpent" value="13917000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -322,16 +293,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/Backpack/Backpack.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -383,20 +344,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Genetics/GeneticsAlgorith.cpp">
+    <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="199">
+          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/Genetics/GeneticsAlgorith.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+        <state relative-caret-position="168">
+          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding>
             <element signature="e#111#128#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Genetics/GeneticsAlgorith.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="35" />
         </state>
       </provider>
     </entry>

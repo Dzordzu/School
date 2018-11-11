@@ -25,7 +25,11 @@ int main() {
     }
 
     algo.setWorkingSet(items);
-    algo.
+    algo.setBackpackSize(5);
+    algo.setPopulationSize(4);
+    algo.setCrossingProbability(0.25);
+    algo.setMutationProbability(0.1);
+    algo.setGenerationLimit(10);
 
 
 

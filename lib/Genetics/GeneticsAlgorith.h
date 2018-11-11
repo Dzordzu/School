@@ -11,8 +11,29 @@
 namespace CustomAlgorithms {
     namespace Genetics {
         class GeneticsAlgorith {
-            std::vector<Backpack::Item> working_set;
+            std::vector<Backpack::Item> workingSet;
             uint8_t populationSize;
+            uint8_t generationLimit;
+        public:
+            uint8_t getGenerationLimit() const;
+
+            void setGenerationLimit(uint8_t generationLimit);
+
+            uint8_t getBackpackSize() const;
+
+            void setBackpackSize(uint8_t backpackSize);
+
+            double getCrossingProbability() const;
+
+            void setCrossingProbability(double crossingProbability);
+
+            double getMutationProbability() const;
+
+            void setMutationProbability(double mutationProbability);
+
+        private:
+            uint8_t backpackSize;
+            double crossingProbability, mutationProbability;
         public:
             uint8_t getPopulationSize() const;
             void setPopulationSize(uint8_t populationSize);
