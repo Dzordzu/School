@@ -3,4 +3,4 @@ project(School)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(School main.cpp lib/Macros/GETSET.cpp)
+add_executable(School main.cpp lib/Macros/GETSET.cpp lib/CustomAlgorithms/Heuristic/GeneticKnapsack/GeneticAlgorithm.cpp lib/CustomAlgorithms/Heuristic/GeneticKnapsack/GeneticAlgorithm.h)

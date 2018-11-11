@@ -10,7 +10,7 @@ int main() {
 //    knapsack.setSize(5);
 //
 //    knapsack.setPossibleItems();
-//    knapsack.generatePossibleItems();
+//    knapsack.generatePossibleItems(4);
 //
 //    knapsack.setPopulationSize(4);
 //    knapsack.setCrossingProbability(0.25);
