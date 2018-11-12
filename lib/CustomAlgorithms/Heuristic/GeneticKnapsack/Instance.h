@@ -18,6 +18,7 @@ class Instance {
     float mutationProbability;
 
 public:
+    Instance();
     Instance(Knapsack *knapsack, WorkingSet *workingSet, float mutationProbability);
     void showInstance();
     uint32_t getFitness();

@@ -66,5 +66,10 @@ void Implementation::init(bool showProcess) {
 
     if(showProcess) printGeneralInfo();
 
-    algorithm.run(showProcess);
+    Instance supposedBest = algorithm.run(showProcess);
+    _BestInstance = supposedBest.getFitness() > _BestInstance.getFitness() ? supposedBest : _BestInstance;
+}
+
+Instance Implementation::getBestInstance() {
+    return _BestInstance;
 }

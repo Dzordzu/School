@@ -26,18 +26,17 @@ void Instance::showInstance() {
     for(bool b: genotype) {
         std::cout<<b;
     }
-    std::cout<<")"<<std::endl;
+    std::cout<<"), Fitness("<<getFitness()<<")"<<std::endl;
 }
 
 uint32_t Instance::getFitness() {
     uint32_t fitness = 0, size = 0;
-    for(uint64_t i=0; i<genotype.size() - 1; i++) {
+    for(uint64_t i=0; i<genotype.size(); i++) {
         if(genotype[i]) {
             fitness += workingSet->getItems()[i].getValue();
             size += workingSet->getItems()[i].getSize();
         }
     }
-
     if(this->knapsack->getSize() < size) return 0;
     else return fitness;
 }
@@ -67,4 +66,10 @@ std::string Instance::getGenotypeAsString() {
         result += std::to_string(b);
     }
     return result;
+}
+
+Instance::Instance() {
+    genotype = std::vector<bool>(1, 0);
+    Knapsack k(0);
+    knapsack = &k;
 }

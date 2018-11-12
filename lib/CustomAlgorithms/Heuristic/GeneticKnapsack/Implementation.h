@@ -34,10 +34,7 @@ class Implementation {
     float crossingProbability, mutationProbability;
     uint16_t iterations;
 
-    /*
-     * Yup. I'm raping this code
-     */
-    void printGeneralInfo();
+    Instance _BestInstance;
 
 public:
     void setKnapsackSize(std::istream &value);
@@ -55,7 +52,12 @@ public:
     void generateRandomWorkingSet(uint16_t amount, uint32_t min = 1, uint32_t max = 100);
 
     void init(bool showProcess = false);
-    std::vector<bool> getBestGenotype();
+    Instance getBestInstance();
+
+    /*
+     * Yup. I'm raping this code
+     */
+    void printGeneralInfo();
 };
 
 

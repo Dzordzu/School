@@ -9,11 +9,12 @@
 void GeneticAlgorithm::generatePopulation() {
     for(int n=0; n<_PopulationSize; n++) {
         population.emplace_back(Instance(_Knapsack, _WorkingSet, _MutationProbability));
+        checkForNewFitness(population.back());
     }
 }
 
 
-void GeneticAlgorithm::run(bool showProcess) {
+Instance GeneticAlgorithm::run(bool showProcess) {
 
     generatePopulation();
     if(showProcess) showPopulation();
@@ -35,6 +36,8 @@ void GeneticAlgorithm::run(bool showProcess) {
                 if(showProcess) std::cout<<parent1->getGenotypeAsString()<<" ("<< crossingProbability<<"<="<<_CrossingProbability<<") "<<std::endl;
             }
             parent1->mutate(showProcess);
+            checkForNewFitness(*parent1);
+
 
         }
 
@@ -45,6 +48,8 @@ void GeneticAlgorithm::run(bool showProcess) {
         }
 
     }
+
+    return _BestInstance;
 }
 
 void GeneticAlgorithm::showPopulation() {
@@ -65,4 +70,11 @@ Instance *GeneticAlgorithm::randomParent() {
     uint64_t p1i = randomParentIndex(), p2i = randomParentIndex();
     Instance * p1 = &population[p1i], * p2 = &population[p2i];
     return p1->getFitness() >= p2->getFitness() ? p1 : p2;
+}
+
+void GeneticAlgorithm::checkForNewFitness(Instance &other) {
+    if(other.getFitness() > _BestFitness) {
+        _BestFitness = other.getFitness();
+        _BestInstance = other;
+    }
 }

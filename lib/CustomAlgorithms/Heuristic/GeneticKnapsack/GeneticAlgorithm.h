@@ -21,6 +21,10 @@ class GeneticAlgorithm {
     GETSET(Knapsack*, Knapsack);
     GETSET(WorkingSet*, WorkingSet);
 
+    uint32_t _BestFitness;
+    Instance _BestInstance;
+    void checkForNewFitness(Instance &other);
+
     std::vector<Instance> population;
 
     void generatePopulation();
@@ -28,7 +32,13 @@ class GeneticAlgorithm {
     float randomProbability();
     Instance * randomParent();
 public:
-    void run(bool showProcess = false);
+
+    GeneticAlgorithm() {
+        _BestFitness = 0;
+        _BestInstance = Instance();
+    }
+
+    Instance run(bool showProcess = false);
     void showPopulation();
 };
 
