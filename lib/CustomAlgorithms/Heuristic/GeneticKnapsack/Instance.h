@@ -17,6 +17,7 @@ class Instance {
 
 public:
     Instance(Knapsack *knapsack, WorkingSet *workingSet);
+    void showInstance();
     uint32_t getFitness();
     void mutate();
     void crossWith(Instance other);
