@@ -19,6 +19,13 @@ int main() {
         set.getItems().emplace_back(KnapsackItem(1, 2));
         set.getItems().emplace_back(KnapsackItem(2, 3));
 
+        std::vector<KnapsackItem> items = {
+                KnapsackItem(100, 8),
+                KnapsackItem(20, 8)
+        };
+
+        set.setItems(items);
+
         for(KnapsackItem i: set.getItems()) {
             std::cout<<i.getInfo()<<std::endl;
         }

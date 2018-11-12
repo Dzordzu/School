@@ -4,4 +4,6 @@
 
 #include "Knapsack.h"
 
-Knapsack::Knapsack(uint32_t size) : size(size) {}
+Knapsack::Knapsack(uint32_t size) {
+    _Size = size;
+}

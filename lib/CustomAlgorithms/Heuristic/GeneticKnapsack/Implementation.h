@@ -15,6 +15,8 @@ public: \
 #endif //STRING_TO_STREAM
 
 #include "GeneticAlgorithm.h"
+#include "WorkingSet.h"
+#include "Knapsack.h"
 #include <string>
 #include <sstream>
 #include <vector>
@@ -22,6 +24,8 @@ public: \
 class Implementation {
 
     GeneticAlgorithm algorithm;
+    WorkingSet workingSet;
+    Knapsack knapsack;
 
     uint32_t knapsackSize;
     uint16_t populationSize;
@@ -44,7 +48,7 @@ public:
     STRING_TO_STREAM(GenerationsAmount);
     STRING_TO_STREAM(Iterations);
 
-    void generateRandomWorkingSet();
+    void generateRandomWorkingSet(uint16_t amount);
 
     void init();
     std::vector<bool> getBestGenotype();

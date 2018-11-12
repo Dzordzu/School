@@ -2,12 +2,14 @@
 // Created by dzordzu on 11.11.18.
 //
 
+#include <random>
 #include "Implementation.h"
 #include "../../../InputValidator/InputValidator.h"
 
 void Implementation::setKnapsackSize(std::istream &value) {
     std::string resultString = InputValidator::getInstance().getNumericString(value);
     knapsackSize = std::stoul(resultString);
+    knapsack = Knapsack(knapsackSize);
 }
 
 void Implementation::setPopulationSize(std::istream &value) {
@@ -33,6 +35,14 @@ void Implementation::setGenerationsAmount(std::istream &value) {
 void Implementation::setIterations(std::istream &value) {
     std::string resultString = InputValidator::getInstance().getNumericString(value);
     iterations = std::stoul(resultString);
+}
+
+void Implementation::generateRandomWorkingSet(uint16_t amount) {
+    std::random_device rd;  //Will be used to obtain a seed for the random number engine
+    std::mt19937 gen(rd()); //Standard mersenne_twister_engine seeded with rd()
+    std::uniform_int_distribution<> dis(1, 100);
+
+
 }
 
 void Implementation::init() {
