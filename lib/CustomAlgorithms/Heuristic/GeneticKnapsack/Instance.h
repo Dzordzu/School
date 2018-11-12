@@ -14,9 +14,9 @@
 class Instance {
     std::vector<bool> genotype;
     Knapsack *knapsack;
-    WorkingSet *workingSet;
 
 public:
+    Instance(Knapsack *knapsack, WorkingSet *workingSet);
     uint32_t getFitness();
     void mutate();
     void crossWith(Instance other);
