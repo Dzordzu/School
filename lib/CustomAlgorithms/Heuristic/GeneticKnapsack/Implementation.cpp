@@ -61,4 +61,6 @@ void Implementation::init(bool showProcess) {
     algorithm.setIterations(iterations);
 
     if(showProcess) printGeneralInfo();
+
+    algorithm.run();
 }
