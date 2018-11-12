@@ -30,9 +30,15 @@ void Implementation::setGenerationsAmount(std::istream &value) {
     populationSize = std::stoul(resultString);
 }
 
+void Implementation::setIterations(std::istream &value) {
+    std::string resultString = InputValidator::getInstance().getNumericString(value);
+    iterations = std::stoul(resultString);
+}
+
 void Implementation::init() {
     algorithm.setPopulationSize(populationSize);
     algorithm.setGenerationsAmount(generationsAmount);
     algorithm.setMutationProbability(mutationProbability);
     algorithm.setCrossingProbability(crossingProbability);
+    algorithm.setKnapsackSize(knapsackSize);
 }
