@@ -3,12 +3,13 @@
 //
 
 #include "KnapsackApp.h"
+#include "CustomAlgorithms/Heuristic/GeneticKnapsack/Implementation.h"
 
 void Apps::KnapsackApp() {
     try {
         Implementation knapsack;
 
-        std::cout<<"Working with 20 items with weight and value from 1 to 5";
+        std::cout<<"Working with 20 items with weight and value from 1 to 5"<<std::endl;
         knapsack.generateRandomWorkingSet(20, 1, 5);
 
         std::cout<<"Knapsack capacity (size): ";

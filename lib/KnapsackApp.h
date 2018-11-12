@@ -5,8 +5,6 @@
 #ifndef SCHOOL_KNAPSACKAPP_H
 #define SCHOOL_KNAPSACKAPP_H
 
-#include "CustomAlgorithms/Heuristic/GeneticKnapsack/Implementation.cpp"
-
 namespace Apps {
     extern void KnapsackApp();
 }
