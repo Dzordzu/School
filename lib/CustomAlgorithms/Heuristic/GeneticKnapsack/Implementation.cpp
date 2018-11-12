@@ -64,5 +64,5 @@ void Implementation::init(bool showProcess) {
 
     if(showProcess) printGeneralInfo();
 
-    algorithm.run();
+    algorithm.run(showProcess);
 }
