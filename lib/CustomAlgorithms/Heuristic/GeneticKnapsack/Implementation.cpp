@@ -52,6 +52,6 @@ void Implementation::init() {
     algorithm.setGenerationsAmount(generationsAmount);
     algorithm.setMutationProbability(mutationProbability);
     algorithm.setCrossingProbability(crossingProbability);
-    algorithm.setKnapsackSize(knapsackSize);
+    algorithm.setKnapsack(&knapsack);
     algorithm.setIterations(iterations);
 }

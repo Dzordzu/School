@@ -7,6 +7,8 @@
 
 #include <cstdint>
 #include "../../../Macros/GETSET.cpp"
+#include "Knapsack.h"
+#include "WorkingSet.h"
 
 
 class GeneticAlgorithm {
@@ -15,7 +17,8 @@ class GeneticAlgorithm {
     GETSET(float, MutationProbability);
     GETSET(uint16_t, GenerationsAmount);
     GETSET(uint16_t, Iterations);
-
+    GETSET(Knapsack*, Knapsack);
+    GETSET(WorkingSet*, WorkingSet);
 public:
     void run();
 };

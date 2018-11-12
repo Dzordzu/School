@@ -36,6 +36,17 @@
        }
 #endif //SET
 
+#ifndef SETref
+#define SETref(type, var) \
+    private: \
+       type _##var; \
+    public: \
+       void set##var(type &val) \
+       {\
+          _##var = val; \
+       }
+#endif //SETref
+
 
 
 #ifndef GETSET

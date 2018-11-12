@@ -12,23 +12,12 @@ int main() {
     // After all wrap to:
     // CustomAlgorithms::Heuristic::GeneticKnapsack::
     try {
-//        Implementation knapsack;
-//        knapsack.setKnapsackSize("asas");
-        Knapsack knapsack(10);
-        WorkingSet set;
-        set.getItems().emplace_back(KnapsackItem(1, 2));
-        set.getItems().emplace_back(KnapsackItem(2, 3));
+        Implementation knapsack;
+        knapsack.setKnapsackSize("5");
+        knapsack.setIterations("10");
+        knapsack.generateRandomWorkingSet(4, 1, 5);
+        knapsack.
 
-        std::vector<KnapsackItem> items = {
-                KnapsackItem(100, 8),
-                KnapsackItem(20, 8)
-        };
-
-        set.setItems(items);
-
-        for(KnapsackItem i: set.getItems()) {
-            std::cout<<i.getInfo()<<std::endl;
-        }
 
 
 

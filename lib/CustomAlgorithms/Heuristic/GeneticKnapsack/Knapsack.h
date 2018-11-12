@@ -13,6 +13,7 @@ class Knapsack {
     GET(uint32_t, Size);
 public:
     explicit Knapsack(uint32_t size);
+    Knapsack() = default;
 };
 
 
