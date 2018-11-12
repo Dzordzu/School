@@ -24,8 +24,9 @@ class GeneticAlgorithm {
     std::vector<Instance> population;
 
     void generatePopulation();
-    int randomParentIndex();
+    uint64_t randomParentIndex();
     float randomProbability();
+    Instance * randomParent();
 public:
     void run(bool showProcess = false);
     void showPopulation();
