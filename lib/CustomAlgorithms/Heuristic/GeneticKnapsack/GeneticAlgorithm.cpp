@@ -31,9 +31,19 @@ Instance GeneticAlgorithm::run(bool showProcess) {
             float crossingProbability = randomProbability();
 
             if(crossingProbability <= _CrossingProbability) {
-                if(showProcess) std::cout<<"Crossing "<<parent1->getGenotypeAsString()<<" with "<<parent2->getGenotypeAsString()<<" is ";
-                parent1->crossWith(*parent2);
-                if(showProcess) std::cout<<parent1->getGenotypeAsString()<<" ("<< crossingProbability<<"<="<<_CrossingProbability<<") "<<std::endl;
+                Instance p1c = *parent1;
+                Instance p2c = *parent2;
+
+                if(showProcess) std::cout<<"Crossing "<<p1c.getGenotypeAsString()<<" with "<<parent2->getGenotypeAsString()<<" is ";
+                p1c.crossWith(*parent2);
+                if(showProcess) std::cout<<p1c.getGenotypeAsString()<<" ("<< crossingProbability<<"<="<<_CrossingProbability<<") "<<std::endl;
+
+                if(showProcess) std::cout<<"Crossing "<<p2c.getGenotypeAsString()<<" with "<<parent1->getGenotypeAsString()<<" is ";
+                p2c.crossWith(*parent1);
+                if(showProcess) std::cout<<p2c.getGenotypeAsString()<<" ("<< crossingProbability<<"<="<<_CrossingProbability<<") "<<std::endl;
+
+                *parent1 = p1c;
+                *parent2 = p2c;
             }
             parent1->mutate(showProcess);
             checkForNewFitness(*parent1);
