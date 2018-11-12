@@ -4,6 +4,6 @@
 
 #include "Implementation.h"
 
-void Implementation::findBestSolution() {
-    this->getAlgo().run(this->_Size);
+void Implementation::init() {
+    t
 }

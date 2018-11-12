@@ -6,14 +6,32 @@
 #define SCHOOL_IMPLEMENTATION_H
 
 #include "GeneticAlgorithm.h"
-#include "../../../Macros/GETSET.cpp"
+#include <string>
 
 class Implementation {
-    GETSET(uint8_t, Size)
-    GET(GeneticAlgorithm, Algo);
+
+    GeneticAlgorithm algorithm;
+
+    uint32_t size;
+    uint32_t populationSize;
+    float crossingProbablity, mutationProbability;
+    uint16_t generationsAmount;
 
 public:
-    void findBestSolution();
+    void setSize(std::istream &value);
+    void setPopulationSize(std::istream &value);
+    void setCrossingProbability(std::istream &value);
+    void setMutationProbability(std::istream &value);
+    void setGenerationsAmount(std::istream &value);
+
+    void setSize(std::string value);
+    void setPopulationSize(std::string value);
+    void setCrossingProbability(std::string value);
+    void setMutationProbability(std::string value);
+    void setGenerationsAmount(std::string value);
+
+
+    void init();
 };
 
 
