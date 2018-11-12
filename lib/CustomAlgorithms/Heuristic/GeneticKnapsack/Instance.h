@@ -8,9 +8,11 @@
 
 #include <vector>
 #include <cstdint>
+#include "Knapsack.h"
 
 class Instance {
     std::vector<bool> genotype;
+    Knapsack *knapsack;
 
     void mutate();
     void crossWith(Instance other);

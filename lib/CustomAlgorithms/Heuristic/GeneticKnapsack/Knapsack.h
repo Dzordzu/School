@@ -9,12 +9,8 @@
 #include <cstdint>
 #include "../../../Macros/GETSET.cpp"
 
-class Knapsack {
+struct Knapsack {
     const uint32_t size;
-    GETSET(uint32_t, CurrentSize);
-    GETSET(uint32_t, CurrentValue);
-
-public:
     Knapsack(uint32_t size);
 };
 
