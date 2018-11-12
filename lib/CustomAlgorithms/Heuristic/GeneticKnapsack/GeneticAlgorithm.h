@@ -15,6 +15,7 @@ class GeneticAlgorithm {
     GETSET(float, MutationProbability);
     GETSET(uint16_t, GenerationsAmount);
     GETSET(uint32_t, KnapsackSize);
+    GETSET(uint16_t, Iterations);
 
 
 public:

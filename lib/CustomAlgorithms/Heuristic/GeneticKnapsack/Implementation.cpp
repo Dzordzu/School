@@ -41,4 +41,5 @@ void Implementation::init() {
     algorithm.setMutationProbability(mutationProbability);
     algorithm.setCrossingProbability(crossingProbability);
     algorithm.setKnapsackSize(knapsackSize);
+    algorithm.setIterations(iterations);
 }

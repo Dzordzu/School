@@ -15,7 +15,6 @@
     <list default="true" id="985f0cad-0331-44fb-ba81-f6055854d415" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/GeneticAlgorithm.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/GeneticAlgorithm.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Implementation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Implementation.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Implementation.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Implementation.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -40,9 +39,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="4543" />
+          <entry key="cpp" value="4553" />
           <entry key="gitignore" value="42" />
-          <entry key="h" value="3899" />
+          <entry key="h" value="3932" />
           <entry key="txt" value="251" />
         </counts>
       </usages-collector>
@@ -50,7 +49,7 @@
         <counts>
           <entry key="CMakeLists.txt" value="251" />
           <entry key="Doxygen file" value="1" />
-          <entry key="ObjectiveC" value="8441" />
+          <entry key="ObjectiveC" value="8484" />
           <entry key="PLAIN_TEXT" value="42" />
         </counts>
       </usages-collector>
@@ -79,8 +78,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Implementation.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+            <state relative-caret-position="243">
+              <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
               <folding>
                 <element signature="e#42#69#0" expanded="true" />
               </folding>
@@ -92,7 +91,7 @@
         <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Implementation.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="258">
-              <caret line="46" column="16" lean-forward="true" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
+              <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -100,8 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/GeneticAlgorithm.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="228">
+              <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
               <folding>
                 <element signature="e#111#129#0" expanded="true" />
               </folding>
@@ -143,8 +142,8 @@
         <option value="$PROJECT_DIR$/lib/InputValidator/InputValidationException.cpp" />
         <option value="$PROJECT_DIR$/lib/InputValidator/InputValidationException.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/GeneticAlgorithm.h" />
         <option value="$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Implementation.h" />
+        <option value="$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/GeneticAlgorithm.h" />
         <option value="$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Implementation.cpp" />
       </list>
     </option>
@@ -256,12 +255,12 @@
       <workItem from="1541953167650" duration="10556000" />
       <workItem from="1541963910444" duration="7971000" />
       <workItem from="1541973397865" duration="2917000" />
-      <workItem from="1542017713984" duration="9378000" />
+      <workItem from="1542017713984" duration="9428000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30878000" />
+    <option name="totallyTimeSpent" value="30928000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -401,8 +400,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/GeneticAlgorithm.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="228">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
           <folding>
             <element signature="e#111#129#0" expanded="true" />
           </folding>
@@ -412,14 +411,14 @@
     <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Implementation.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
-          <caret line="46" column="16" lean-forward="true" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
+          <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Implementation.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+        <state relative-caret-position="243">
+          <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
           <folding>
             <element signature="e#42#69#0" expanded="true" />
           </folding>
