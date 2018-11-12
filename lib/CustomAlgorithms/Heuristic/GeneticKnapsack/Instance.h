@@ -6,8 +6,18 @@
 #define SCHOOL_INSTANCE_H
 
 
+#include <vector>
+#include <cstdint>
+
 class Instance {
-    
+    std::vector<bool> genotype;
+
+    void mutate();
+    void crossWith(Instance other);
+
+public:
+    uint32_t getFitness();
+
 };
 
 

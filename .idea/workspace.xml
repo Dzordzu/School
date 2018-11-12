@@ -13,9 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="985f0cad-0331-44fb-ba81-f6055854d415" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Instance.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Instance.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Instance.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Instance.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -42,7 +40,7 @@
         <counts>
           <entry key="cpp" value="4567" />
           <entry key="gitignore" value="42" />
-          <entry key="h" value="4136" />
+          <entry key="h" value="4244" />
           <entry key="txt" value="251" />
         </counts>
       </usages-collector>
@@ -50,7 +48,7 @@
         <counts>
           <entry key="CMakeLists.txt" value="251" />
           <entry key="Doxygen file" value="1" />
-          <entry key="ObjectiveC" value="8702" />
+          <entry key="ObjectiveC" value="8810" />
           <entry key="PLAIN_TEXT" value="42" />
         </counts>
       </usages-collector>
@@ -141,8 +139,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Instance.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            <state relative-caret-position="210">
+              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+              <folding>
+                <element signature="e#96#113#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -316,12 +317,12 @@
       <workItem from="1541953167650" duration="10556000" />
       <workItem from="1541963910444" duration="7971000" />
       <workItem from="1541973397865" duration="2917000" />
-      <workItem from="1542017713984" duration="9963000" />
+      <workItem from="1542017713984" duration="10113000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31463000" />
+    <option name="totallyTimeSpent" value="31613000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -494,8 +495,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Instance.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        <state relative-caret-position="210">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding>
+            <element signature="e#96#113#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
