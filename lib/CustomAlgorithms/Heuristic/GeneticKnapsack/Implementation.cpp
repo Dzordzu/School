@@ -58,6 +58,7 @@ void Implementation::init(bool showProcess) {
     algorithm.setMutationProbability(mutationProbability);
     algorithm.setCrossingProbability(crossingProbability);
     algorithm.setKnapsack(&knapsack);
+    algorithm.setWorkingSet(&workingSet);
     algorithm.setIterations(iterations);
 
     if(showProcess) printGeneralInfo();
