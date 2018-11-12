@@ -20,7 +20,7 @@ int main() {
         set.getItems().emplace_back(KnapsackItem(2, 3));
 
         for(KnapsackItem i: set.getItems()) {
-            std::cout<<i.getInfo();
+            std::cout<<i.getInfo()<<std::endl;
         }
 
 

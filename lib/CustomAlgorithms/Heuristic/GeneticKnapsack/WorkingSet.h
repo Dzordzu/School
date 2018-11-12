@@ -11,7 +11,9 @@
 #include "../../../Macros/GETSET.cpp"
 
 class WorkingSet {
-    GETSET(std::vector<KnapsackItem>, Items);
+    GETrefSET(std::vector<KnapsackItem>, Items);
+public:
+    WorkingSet() = default;
 };
 
 

@@ -3,8 +3,42 @@
 // TODO Add header implementation
 //
 
-#ifndef GETSET
+#ifndef GET
+#define GET(type, var) \
+    private: \
+       type _##var; \
+    public: \
+       type get##var() \
+       {\
+          return _##var; \
+       }
+#endif //GET
 
+#ifndef GETref
+#define GETref(type, var) \
+    private: \
+       type _##var; \
+    public: \
+       type& get##var() \
+       {\
+          return _##var; \
+       }
+#endif //GETref
+
+#ifndef SET
+#define SET(type, var) \
+    private: \
+       type _##var; \
+    public: \
+       void set##var(type val) \
+       {\
+          _##var = val; \
+       }
+#endif //SET
+
+
+
+#ifndef GETSET
 #define GETSET(type, var) \
     private: \
        type _##var; \
@@ -17,31 +51,19 @@
        {\
           _##var = val; \
        }
-
 #endif //GETSET
 
-#ifndef GET
-
-#define GET(type, var) \
+#ifndef GETrefSET
+#define GETrefSET(type, var) \
     private: \
        type _##var; \
     public: \
-       type get##var() \
+       type& get##var()\
        {\
           return _##var; \
-       }
-
-#endif //GET
-
-#ifndef SET
-
-#define SET(type, var) \
-    private: \
-       type _##var; \
-    public: \
+       }\
        void set##var(type val) \
        {\
           _##var = val; \
        }
-
-#endif //SET
+#endif //GETrefSET
