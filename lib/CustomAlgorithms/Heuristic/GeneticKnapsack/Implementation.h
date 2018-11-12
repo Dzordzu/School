@@ -17,7 +17,7 @@
 #include <string>
 #include <sstream>
 
-class Implementation {
+struct Implementation {
 
     GeneticAlgorithm algorithm;
 

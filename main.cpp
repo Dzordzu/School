@@ -4,12 +4,16 @@
 
 int main() {
 
-    std::cout<<InputValidator::getInstance().getNumericString(std::cin);
+    //std::cout<<InputValidator::getInstance().getNumericString(std::cin);
 
     // TODO
     // After all wrap to:
     // CustomAlgorithms::Heuristic::GeneticKnapsack::
-    Implementation knapsack;
+    try {
+        Implementation knapsack;
+        knapsack.setKnapsackSize("a12");
+        std::cout << knapsack.knapsackSize;
+
 
 
 //    knapsack.setSize(5);
@@ -22,7 +26,13 @@ int main() {
 //    knapsack.getAlgo().setMutationProbability(0.1);
 //    knapsack.getAlgoo().setGenerationsAmount(2);
 //
-    knapsack.findBestSolution();
+    knapsack.init();
+
+    } catch(InputValidationException &e) {
+        std::cout<<e.what();
+    }
+
+    std::cout<<"ASAS";
 
     return 0;
 }

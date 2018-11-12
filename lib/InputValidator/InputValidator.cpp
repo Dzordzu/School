@@ -32,7 +32,7 @@ std::string InputValidator::getAlphabetical(std::istream &stream) {
     if(std::regex_search(result, matcher, pattern))
         return result;
 
-    throw new InputValidationException("Incorrect type. Input has to be alphabetical (can contain spaces)");
+    throw InputValidationException("Incorrect type. Input has to be alphabetical (can contain spaces)");
 }
 
 InputValidator &InputValidator::getInstance() {
@@ -50,6 +50,6 @@ std::string InputValidator::getNumericString(std::istream &stream) {
     if(std::regex_search(result, matcher, pattern))
         return result;
 
-    throw new InputValidationException("Incorrect type. Input has to be a numerical value");
+    throw InputValidationException("Incorrect type. Input has to be a numerical value");
 
 }
