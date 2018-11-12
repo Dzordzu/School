@@ -13,6 +13,7 @@ int main() {
     // CustomAlgorithms::Heuristic::GeneticKnapsack::
     try {
         Implementation knapsack;
+
         knapsack.setKnapsackSize("5");
         knapsack.setIterations("10");
         knapsack.setPopulationSize("5");

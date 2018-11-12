@@ -19,7 +19,6 @@ void Implementation::printGeneralInfo() {
 void Implementation::setKnapsackSize(std::istream &value) {
     std::string resultString = InputValidator::getInstance().getNumericString(value);
     knapsackSize = std::stoul(resultString);
-    knapsack = Knapsack(knapsackSize);
 }
 
 void Implementation::setPopulationSize(std::istream &value) {
@@ -53,6 +52,9 @@ void Implementation::generateRandomWorkingSet(uint16_t amount, uint32_t min, uin
 }
 
 void Implementation::init(bool showProcess) {
+
+    Knapsack knapsack(knapsackSize);
+
     algorithm.setPopulationSize(populationSize);
     algorithm.setGenerationsAmount(generationsAmount);
     algorithm.setMutationProbability(mutationProbability);

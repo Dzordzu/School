@@ -28,7 +28,6 @@ class Implementation {
 
     GeneticAlgorithm algorithm;
     WorkingSet workingSet;
-    Knapsack knapsack;
 
     uint32_t knapsackSize;
     uint16_t populationSize;

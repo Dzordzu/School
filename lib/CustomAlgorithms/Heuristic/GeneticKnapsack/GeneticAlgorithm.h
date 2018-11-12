@@ -20,7 +20,7 @@ class GeneticAlgorithm {
     GETSET(Knapsack*, Knapsack);
     GETSET(WorkingSet*, WorkingSet);
 public:
-    void run();
+    void run(bool showProcess = false);
 };
 
 

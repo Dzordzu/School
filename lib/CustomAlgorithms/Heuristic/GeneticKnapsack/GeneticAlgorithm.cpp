@@ -3,3 +3,7 @@
 //
 
 #include "GeneticAlgorithm.h"
+
+void GeneticAlgorithm::run(bool showProcess) {
+
+}
