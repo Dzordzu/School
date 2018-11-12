@@ -9,10 +9,12 @@
 #include <vector>
 #include <cstdint>
 #include "Knapsack.h"
+#include "WorkingSet.h"
 
 class Instance {
     std::vector<bool> genotype;
     Knapsack *knapsack;
+    WorkingSet *workingSet;
 
     void mutate();
     void crossWith(Instance other);
