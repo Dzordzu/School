@@ -6,8 +6,6 @@
 
 InputValidationException::InputValidationException(std::string message) : message(message) {}
 
-InputValidationException::~InputValidationException() {}
-
 const char *InputValidationException::what() const noexcept {
     return this->message.c_str();
 }

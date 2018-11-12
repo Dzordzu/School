@@ -13,7 +13,7 @@ class InputValidationException : public std::exception {
     const std::string message;
 public:
     explicit InputValidationException(std::string message);
-    ~InputValidationException() override;
+    ~InputValidationException() override = default;
 
     const char* what() const noexcept override;
 
