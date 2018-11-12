@@ -7,6 +7,7 @@
 
 #ifndef STRING_TO_STREAM
 #define STRING_TO_STREAM(name) \
+public: \
     void set##name(std::string value) {\
         std::istringstream stream(value); \
         set##name(stream); \
@@ -17,13 +18,13 @@
 #include <string>
 #include <sstream>
 
-struct Implementation {
+class Implementation {
 
     GeneticAlgorithm algorithm;
 
     uint32_t knapsackSize;
     uint16_t populationSize;
-    float crossingProbablity, mutationProbability;
+    float crossingProbability, mutationProbability;
     uint16_t generationsAmount;
 
 public:

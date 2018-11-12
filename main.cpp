@@ -11,8 +11,7 @@ int main() {
     // CustomAlgorithms::Heuristic::GeneticKnapsack::
     try {
         Implementation knapsack;
-        knapsack.setKnapsackSize("a12");
-        std::cout << knapsack.knapsackSize;
+        knapsack.setKnapsackSize("asas");
 
 
 
@@ -31,8 +30,6 @@ int main() {
     } catch(InputValidationException &e) {
         std::cout<<e.what();
     }
-
-    std::cout<<"ASAS";
 
     return 0;
 }
