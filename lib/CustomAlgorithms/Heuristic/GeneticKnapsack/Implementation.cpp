@@ -12,7 +12,7 @@ void Implementation::printGeneralInfo() {
     std::cout<<std::endl<<"Knapsack capacity (size): "<<knapsackSize<<std::endl;
     std::cout<<"Iterations: "<<iterations<<std::endl;
     std::cout<<"Population: "<<populationSize<<std::endl;
-    std::cout<<"-------------------------";
+    std::cout<<"-------------------------"<<std::endl;
 }
 
 

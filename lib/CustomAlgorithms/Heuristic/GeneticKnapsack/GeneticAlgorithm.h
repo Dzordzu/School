@@ -9,6 +9,8 @@
 #include "../../../Macros/GETSET.cpp"
 #include "Knapsack.h"
 #include "WorkingSet.h"
+#include "Instance.h"
+#include <iostream>
 
 
 class GeneticAlgorithm {
@@ -18,6 +20,10 @@ class GeneticAlgorithm {
     GETSET(uint16_t, Iterations);
     GETSET(Knapsack*, Knapsack);
     GETSET(WorkingSet*, WorkingSet);
+
+    std::vector<Instance> population;
+
+    void generatePopulation();
 public:
     void run(bool showProcess = false);
 };

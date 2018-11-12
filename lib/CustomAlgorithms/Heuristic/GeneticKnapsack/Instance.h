@@ -16,12 +16,10 @@ class Instance {
     Knapsack *knapsack;
     WorkingSet *workingSet;
 
-    void mutate();
-    void crossWith(Instance other);
-
 public:
     uint32_t getFitness();
-
+    void mutate();
+    void crossWith(Instance other);
 };
 
 
