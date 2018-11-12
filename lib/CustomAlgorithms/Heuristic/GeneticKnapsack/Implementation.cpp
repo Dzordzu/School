@@ -12,6 +12,8 @@ void Implementation::printGeneralInfo() {
     std::cout<<std::endl<<"Knapsack capacity (size): "<<knapsackSize<<std::endl;
     std::cout<<"Iterations: "<<iterations<<std::endl;
     std::cout<<"Population: "<<populationSize<<std::endl;
+    std::cout<<"Crossing Prob: "<<crossingProbability<<std::endl;
+    std::cout<<"Mutation Prob: "<<mutationProbability<<std::endl;
     std::cout<<"-------------------------"<<std::endl;
 }
 

@@ -4,14 +4,11 @@
 
 #include <random>
 #include "GeneticAlgorithm.h"
+#include "RandomWrapper.h"
 
 void GeneticAlgorithm::generatePopulation() {
-    std::random_device rd;  //Will be used to obtain a seed for the random number engine
-    std::mt19937 gen(rd()); //Standard mersenne_twister_engine seeded with rd()
-    std::uniform_int_distribution<uint64_t> dis(1, _WorkingSet->getItems().size());
-
     for(int n=0; n<_PopulationSize; n++) {
-        population.emplace_back(Instance(_Knapsack, _WorkingSet));
+        population.emplace_back(Instance(_Knapsack, _WorkingSet, _MutationProbability));
     }
 }
 
@@ -22,11 +19,7 @@ void GeneticAlgorithm::run(bool showProcess) {
     if(showProcess) showPopulation();
 
     for(int i=0; i<_Iterations; i++) {
-
-        if(showProcess) {
-            std::cout<<std::endl<<"---------------------------"<<std::endl;
-            std::cout<<"Iteration "<<i<<": "<<std::endl;
-        }
+        if(showProcess) std::cout<<std::endl<<"---------------------------"<<std::endl;
 
         for(int j=0; j<_PopulationSize; j++) {
             /*
@@ -36,10 +29,21 @@ void GeneticAlgorithm::run(bool showProcess) {
             Instance *parent1 = randomParent(), *parent2 = randomParent();
             float crossingProbability = randomProbability();
 
-            if(crossingProbability <= _CrossingProbability) parent1->crossWith(*parent2);
-            parent1->mutate();
+            if(crossingProbability <= _CrossingProbability) {
+                if(showProcess) std::cout<<"Crossing "<<parent1->getGenotypeAsString()<<" with "<<parent2->getGenotypeAsString()<<" is ";
+                parent1->crossWith(*parent2);
+                if(showProcess) std::cout<<parent1->getGenotypeAsString()<<" ("<< crossingProbability<<"<="<<_CrossingProbability<<") "<<std::endl;
+            }
+            parent1->mutate(showProcess);
 
         }
+
+        if(showProcess) {
+            std::cout<<std::endl<<"---------------------------"<<std::endl;
+            std::cout<<"After Iteration "<<i<<": "<<std::endl;
+            showPopulation();
+        }
+
     }
 }
 
@@ -50,19 +54,11 @@ void GeneticAlgorithm::showPopulation() {
 }
 
 uint64_t GeneticAlgorithm::randomParentIndex() {
-    std::random_device rd;  //Will be used to obtain a seed for the random number engine
-    std::mt19937 gen(rd()); //Standard mersenne_twister_engine seeded with rd()
-    std::uniform_int_distribution<uint64_t> dis(1, _PopulationSize);
-
-    return dis(gen)-1;
+    return RandomWrapper::getRandom<uint64_t >(0, _PopulationSize-1);
 }
 
 float GeneticAlgorithm::randomProbability() {
-    std::random_device rd;  //Will be used to obtain a seed for the random number engine
-    std::mt19937 gen(rd()); //Standard mersenne_twister_engine seeded with rd()
-    std::uniform_int_distribution<uint64_t> dis(1, 256);
-
-    return dis(gen)/256;
+    return RandomWrapper::getRandomProbability();
 }
 
 Instance *GeneticAlgorithm::randomParent() {

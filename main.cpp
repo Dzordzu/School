@@ -15,8 +15,10 @@ int main() {
         Implementation knapsack;
 
         knapsack.setKnapsackSize("5");
-        knapsack.setIterations("10");
+        knapsack.setIterations("20");
         knapsack.setPopulationSize("5");
+        knapsack.setCrossingProbability("0.5");
+        knapsack.setMutationProbability("0.1");
 
         knapsack.generateRandomWorkingSet(4, 1, 5);
         knapsack.init(true);

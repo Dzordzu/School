@@ -15,13 +15,15 @@ class Instance {
     std::vector<bool> genotype;
     Knapsack *knapsack;
     WorkingSet *workingSet;
+    float mutationProbability;
 
 public:
-    Instance(Knapsack *knapsack, WorkingSet *workingSet);
+    Instance(Knapsack *knapsack, WorkingSet *workingSet, float mutationProbability);
     void showInstance();
     uint32_t getFitness();
-    void mutate();
-    void crossWith(Instance other);
+    void mutate(bool showProcess = false);
+    void crossWith(Instance &other);
+    std::string getGenotypeAsString();
 };
 
 
