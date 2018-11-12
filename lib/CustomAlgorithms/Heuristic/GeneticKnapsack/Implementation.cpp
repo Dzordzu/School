@@ -37,12 +37,14 @@ void Implementation::setIterations(std::istream &value) {
     iterations = std::stoul(resultString);
 }
 
-void Implementation::generateRandomWorkingSet(uint16_t amount) {
+void Implementation::generateRandomWorkingSet(uint16_t amount, uint32_t min = 1, uint32_t max = 100) {
     std::random_device rd;  //Will be used to obtain a seed for the random number engine
     std::mt19937 gen(rd()); //Standard mersenne_twister_engine seeded with rd()
     std::uniform_int_distribution<> dis(1, 100);
 
+    for(int n=0; n<amount; n++) {
 
+    }
 }
 
 void Implementation::init() {

@@ -48,7 +48,7 @@ public:
     STRING_TO_STREAM(GenerationsAmount);
     STRING_TO_STREAM(Iterations);
 
-    void generateRandomWorkingSet(uint16_t amount);
+    void generateRandomWorkingSet(uint16_t amount, uint32_t min = 1, uint32_t max = 100);
 
     void init();
     std::vector<bool> getBestGenotype();
