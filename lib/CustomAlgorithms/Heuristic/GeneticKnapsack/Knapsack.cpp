@@ -3,3 +3,5 @@
 //
 
 #include "Knapsack.h"
+
+Knapsack::Knapsack(uint32_t size) : size(size) {}

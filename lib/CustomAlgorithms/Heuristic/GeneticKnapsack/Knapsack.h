@@ -11,7 +11,8 @@
 
 struct Knapsack {
     const uint32_t size;
-    Knapsack(uint32_t size);
+
+    explicit Knapsack(uint32_t size);
 };
 
 
