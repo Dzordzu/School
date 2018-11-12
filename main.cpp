@@ -15,13 +15,13 @@ int main() {
         Implementation knapsack;
 
         knapsack.setKnapsackSize("5");
-        knapsack.setIterations("2000");
-        knapsack.setPopulationSize("5");
-        knapsack.setCrossingProbability("0.5");
-        knapsack.setMutationProbability("0.2");
+        knapsack.setIterations("100");
+        knapsack.setPopulationSize("400");
+        knapsack.setCrossingProbability("1");
+        knapsack.setMutationProbability("0.05");
 
-        knapsack.generateRandomWorkingSet(200, 1, 5);
-        knapsack.init(0);
+        knapsack.generateRandomWorkingSet(20, 1, 5);
+        knapsack.init();
         std::cout<<knapsack.getBestInstance().getFitness()<<" "<<knapsack.getBestInstance().getGenotypeAsString()<<std::endl;
         knapsack.printGeneralInfo();
 

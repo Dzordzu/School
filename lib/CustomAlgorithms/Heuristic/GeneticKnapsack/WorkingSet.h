@@ -8,7 +8,7 @@
 
 #include <vector>
 #include "KnapsackItem.h"
-#include "../../../Macros/GETSET.cpp"
+#include "../../../Macros/GETSET.h"
 
 class WorkingSet {
     GETrefSET(std::vector<KnapsackItem>, Items);

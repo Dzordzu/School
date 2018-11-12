@@ -13,7 +13,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="985f0cad-0331-44fb-ba81-f6055854d415" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/GeneticAlgorithm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/GeneticAlgorithm.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -39,7 +38,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="9325" />
+          <entry key="cpp" value="9362" />
           <entry key="gitignore" value="42" />
           <entry key="h" value="6184" />
           <entry key="txt" value="251" />
@@ -49,7 +48,7 @@
         <counts>
           <entry key="CMakeLists.txt" value="251" />
           <entry key="Doxygen file" value="1" />
-          <entry key="ObjectiveC" value="15508" />
+          <entry key="ObjectiveC" value="15545" />
           <entry key="PLAIN_TEXT" value="42" />
         </counts>
       </usages-collector>
@@ -80,8 +79,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+            <state relative-caret-position="240">
+              <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -308,12 +307,12 @@
       <workItem from="1541953167650" duration="10556000" />
       <workItem from="1541963910444" duration="7971000" />
       <workItem from="1541973397865" duration="2917000" />
-      <workItem from="1542017713984" duration="29298000" />
+      <workItem from="1542017713984" duration="30029000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50798000" />
+    <option name="totallyTimeSpent" value="51529000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -588,8 +587,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        <state relative-caret-position="240">
+          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
