@@ -18,7 +18,7 @@ class Implementation {
     uint16_t generationsAmount;
 
 public:
-    void setSize(std::istream &value);
+    void setKnapsackSize(std::istream &value);
     void setPopulationSize(std::istream &value);
     void setCrossingProbability(std::istream &value);
     void setMutationProbability(std::istream &value);
