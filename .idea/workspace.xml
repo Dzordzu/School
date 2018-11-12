@@ -13,10 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="985f0cad-0331-44fb-ba81-f6055854d415" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Implementation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Implementation.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/KnapsackApp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/KnapsackApp.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/KnapsackApp.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/KnapsackApp.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -43,7 +41,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="9450" />
+          <entry key="cpp" value="9740" />
           <entry key="gitignore" value="42" />
           <entry key="h" value="6578" />
           <entry key="txt" value="276" />
@@ -53,7 +51,7 @@
         <counts>
           <entry key="CMakeLists.txt" value="276" />
           <entry key="Doxygen file" value="1" />
-          <entry key="ObjectiveC" value="16027" />
+          <entry key="ObjectiveC" value="16317" />
           <entry key="PLAIN_TEXT" value="42" />
         </counts>
       </usages-collector>
@@ -84,8 +82,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/KnapsackApp.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="11" column="87" selection-start-line="11" selection-start-column="87" selection-end-line="11" selection-end-column="87" />
+            <state relative-caret-position="258">
+              <caret line="43" column="60" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
               <folding>
                 <element signature="e#42#66#0" expanded="true" />
               </folding>
@@ -96,8 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Implementation.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="75" selection-start-line="75" selection-end-line="75" />
+            <state relative-caret-position="156">
+              <caret line="64" column="42" selection-start-line="64" selection-start-column="42" selection-end-line="64" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -129,7 +127,11 @@
     <findStrings>
       <find>Impleme</find>
       <find>Implementation</find>
+      <find>knapsackImp</find>
     </findStrings>
+    <replaceStrings>
+      <replace>knapsack</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -174,8 +176,8 @@
         <option value="$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Implementation.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/lib/KnapsackApp.h" />
-        <option value="$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Implementation.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Implementation.cpp" />
         <option value="$PROJECT_DIR$/lib/KnapsackApp.cpp" />
       </list>
     </option>
@@ -310,12 +312,12 @@
       <workItem from="1541973397865" duration="2917000" />
       <workItem from="1542017713984" duration="30332000" />
       <workItem from="1542052044749" duration="1764000" />
-      <workItem from="1542054577141" duration="192000" />
+      <workItem from="1542054577141" duration="1286000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54069000" />
+    <option name="totallyTimeSpent" value="55163000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -335,13 +337,13 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.2704918" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.37540984" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37540984" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Messages" order="8" visible="true" weight="0.28360656" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.28360656" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32938856" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
@@ -521,6 +523,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#96#114#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -554,13 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/KnapsackApp.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -578,17 +576,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/KnapsackApp.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Implementation.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        <state relative-caret-position="156">
+          <caret line="64" column="42" selection-start-line="64" selection-start-column="42" selection-end-line="64" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/KnapsackApp.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="11" column="87" selection-start-line="11" selection-start-column="87" selection-end-line="11" selection-end-column="87" />
+        <state relative-caret-position="258">
+          <caret line="43" column="60" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
           <folding>
             <element signature="e#42#66#0" expanded="true" />
           </folding>

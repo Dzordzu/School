@@ -64,8 +64,6 @@ void Implementation::init(bool showProcess) {
     _Algorithm.setWorkingSet(&_WorkingSet);
     _Algorithm.setIterations(_Iterations);
 
-    if(showProcess) printGeneralInfo();
-
     Instance supposedBest = _Algorithm.run(showProcess);
     _BestInstance = supposedBest.getFitness() > _BestInstance.getFitness() ? supposedBest : _BestInstance;
 }
