@@ -2,9 +2,19 @@
 // Created by dzordzu on 11.11.18.
 //
 
-#include <random>
 #include "Implementation.h"
-#include "../../../InputValidator/InputValidator.h"
+
+void Implementation::printGeneralInfo() {
+    std::cout<<"Working set: "<<std::endl;
+    for(KnapsackItem i : workingSet.getItems()) {
+        std::cout<<i.getInfo()<<std::endl;
+    }
+    std::cout<<std::endl<<"Knapsack capacity (size): "<<knapsackSize<<std::endl;
+    std::cout<<"Iterations: "<<iterations<<std::endl;
+    std::cout<<"Population: "<<populationSize<<std::endl;
+    std::cout<<"-------------------------";
+}
+
 
 void Implementation::setKnapsackSize(std::istream &value) {
     std::string resultString = InputValidator::getInstance().getNumericString(value);
@@ -27,11 +37,6 @@ void Implementation::setMutationProbability(std::istream &value) {
     mutationProbability= std::stof(resultString);
 }
 
-void Implementation::setGenerationsAmount(std::istream &value) {
-    std::string resultString = InputValidator::getInstance().getNumericString(value);
-    populationSize = std::stoul(resultString);
-}
-
 void Implementation::setIterations(std::istream &value) {
     std::string resultString = InputValidator::getInstance().getNumericString(value);
     iterations = std::stoul(resultString);
@@ -47,11 +52,13 @@ void Implementation::generateRandomWorkingSet(uint16_t amount, uint32_t min, uin
     }
 }
 
-void Implementation::init() {
+void Implementation::init(bool showProcess) {
     algorithm.setPopulationSize(populationSize);
     algorithm.setGenerationsAmount(generationsAmount);
     algorithm.setMutationProbability(mutationProbability);
     algorithm.setCrossingProbability(crossingProbability);
     algorithm.setKnapsack(&knapsack);
     algorithm.setIterations(iterations);
+
+    if(showProcess) printGeneralInfo();
 }

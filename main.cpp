@@ -16,7 +16,7 @@ int main() {
         knapsack.setKnapsackSize("5");
         knapsack.setIterations("10");
         knapsack.generateRandomWorkingSet(4, 1, 5);
-        knapsack.
+        knapsack.init(true);
 
 
 

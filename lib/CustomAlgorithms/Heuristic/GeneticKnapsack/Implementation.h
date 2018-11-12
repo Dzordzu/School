@@ -14,11 +14,14 @@ public: \
     }
 #endif //STRING_TO_STREAM
 
+#include "../../../InputValidator/InputValidator.h"
 #include "GeneticAlgorithm.h"
 #include "WorkingSet.h"
 #include "Knapsack.h"
 #include <string>
 #include <sstream>
+#include <iostream>
+#include <random>
 #include <vector>
 
 class Implementation {
@@ -33,24 +36,27 @@ class Implementation {
     uint16_t generationsAmount;
     uint16_t iterations;
 
+    /*
+     * Yup. I'm raping this code
+     */
+    void printGeneralInfo();
+
 public:
     void setKnapsackSize(std::istream &value);
     void setPopulationSize(std::istream &value);
     void setCrossingProbability(std::istream &value);
     void setMutationProbability(std::istream &value);
-    void setGenerationsAmount(std::istream &value);
     void setIterations(std::istream &value);
 
     STRING_TO_STREAM(KnapsackSize);
     STRING_TO_STREAM(PopulationSize);
     STRING_TO_STREAM(CrossingProbability);
     STRING_TO_STREAM(MutationProbability);
-    STRING_TO_STREAM(GenerationsAmount);
     STRING_TO_STREAM(Iterations);
 
     void generateRandomWorkingSet(uint16_t amount, uint32_t min = 1, uint32_t max = 100);
 
-    void init();
+    void init(bool showProcess = false);
     std::vector<bool> getBestGenotype();
 };
 
