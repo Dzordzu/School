@@ -32,7 +32,6 @@ class Implementation {
     uint32_t knapsackSize;
     uint16_t populationSize;
     float crossingProbability, mutationProbability;
-    uint16_t generationsAmount;
     uint16_t iterations;
 
     /*

@@ -56,7 +56,6 @@ void Implementation::init(bool showProcess) {
     Knapsack knapsack(knapsackSize);
 
     algorithm.setPopulationSize(populationSize);
-    algorithm.setGenerationsAmount(generationsAmount);
     algorithm.setMutationProbability(mutationProbability);
     algorithm.setCrossingProbability(crossingProbability);
     algorithm.setKnapsack(&knapsack);
