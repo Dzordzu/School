@@ -1,5 +1,7 @@
 #include <iostream>
 #include "lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Implementation.cpp"
+#include "lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Knapsack.h"
+#include "lib/CustomAlgorithms/Heuristic/GeneticKnapsack/WorkingSet.h"
 #include "lib/InputValidator/InputValidator.h"
 
 int main() {
@@ -10,8 +12,17 @@ int main() {
     // After all wrap to:
     // CustomAlgorithms::Heuristic::GeneticKnapsack::
     try {
-        Implementation knapsack;
-        knapsack.setKnapsackSize("asas");
+//        Implementation knapsack;
+//        knapsack.setKnapsackSize("asas");
+        Knapsack knapsack(10);
+        WorkingSet set;
+        set.getItems().emplace_back(KnapsackItem(1, 2));
+        set.getItems().emplace_back(KnapsackItem(2, 3));
+
+        for(KnapsackItem i: set.getItems()) {
+            std::cout<<i.getInfo();
+        }
+
 
 
 
@@ -25,7 +36,7 @@ int main() {
 //    knapsack.getAlgo().setMutationProbability(0.1);
 //    knapsack.getAlgoo().setGenerationsAmount(2);
 //
-    knapsack.init();
+    //knapsack.init();
 
     } catch(InputValidationException &e) {
         std::cout<<e.what();

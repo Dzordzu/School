@@ -7,10 +7,15 @@
 
 
 #include <stdint-gcc.h>
+#include <string>
+#include "../../../Macros/GETSET.cpp"
 
-struct KnapsackItem {
-    const uint32_t value, size;
+class KnapsackItem {
+    GET(uint32_t, Value);
+    GET(uint32_t, Size);
+public:
     KnapsackItem(uint32_t value, uint32_t size);
+    std::string getInfo();
 };
 
 
