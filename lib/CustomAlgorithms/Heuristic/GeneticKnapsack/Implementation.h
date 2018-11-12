@@ -17,6 +17,7 @@ public: \
 #include "GeneticAlgorithm.h"
 #include <string>
 #include <sstream>
+#include <vector>
 
 class Implementation {
 
@@ -43,8 +44,10 @@ public:
     STRING_TO_STREAM(GenerationsAmount);
     STRING_TO_STREAM(Iterations);
 
+    void generateRandomWorkingSet();
 
     void init();
+    std::vector<bool> getBestGenotype();
 };
 
 

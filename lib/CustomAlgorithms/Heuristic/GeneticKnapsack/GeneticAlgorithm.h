@@ -19,6 +19,7 @@ class GeneticAlgorithm {
 
 
 public:
+    void generatePopulation();
     void run();
 };
 
