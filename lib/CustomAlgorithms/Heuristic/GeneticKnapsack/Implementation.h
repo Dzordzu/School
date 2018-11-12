@@ -5,8 +5,17 @@
 #ifndef SCHOOL_IMPLEMENTATION_H
 #define SCHOOL_IMPLEMENTATION_H
 
+#ifndef STRING_TO_STREAM
+#define STRING_TO_STREAM(name) \
+    void set##name(std::string value) {\
+        std::istringstream stream(value); \
+        set##name(stream); \
+    }
+#endif //STRING_TO_STREAM
+
 #include "GeneticAlgorithm.h"
 #include <string>
+#include <sstream>
 
 class Implementation {
 
@@ -24,11 +33,11 @@ public:
     void setMutationProbability(std::istream &value);
     void setGenerationsAmount(std::istream &value);
 
-    void setSize(std::string value);
-    void setPopulationSize(std::string value);
-    void setCrossingProbability(std::string value);
-    void setMutationProbability(std::string value);
-    void setGenerationsAmount(std::string value);
+    STRING_TO_STREAM(KnapsackSize);
+    STRING_TO_STREAM(PopulationSize);
+    STRING_TO_STREAM(CrossingProbability);
+    STRING_TO_STREAM(MutationProbability);
+    STRING_TO_STREAM(GenerationsAmount);
 
 
     void init();
