@@ -12,10 +12,10 @@
 #include "WorkingSet.h"
 
 class Instance {
-    std::vector<bool> genotype;
-    Knapsack *knapsack;
-    WorkingSet *workingSet;
-    float mutationProbability;
+    std::vector<bool> _Genotype;
+    Knapsack *_Knapsack;
+    WorkingSet *_WorkingSet;
+    float _MutationProbability;
 
 public:
     Instance();

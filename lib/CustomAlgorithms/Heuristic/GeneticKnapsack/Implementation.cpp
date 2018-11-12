@@ -6,41 +6,41 @@
 
 void Implementation::printGeneralInfo() {
     std::cout<<"Working set: "<<std::endl;
-    for(KnapsackItem i : workingSet.getItems()) {
+    for(KnapsackItem i : _WorkingSet.getItems()) {
         std::cout<<i.getInfo()<<std::endl;
     }
-    std::cout<<std::endl<<"Knapsack capacity (size): "<<knapsackSize<<std::endl;
-    std::cout<<"Iterations: "<<iterations<<std::endl;
-    std::cout<<"Population: "<<populationSize<<std::endl;
-    std::cout<<"Crossing Prob: "<<crossingProbability<<std::endl;
-    std::cout<<"Mutation Prob: "<<mutationProbability<<std::endl;
+    std::cout<<std::endl<<"Knapsack capacity (size): "<<_KnapsackSize<<std::endl;
+    std::cout<<"Iterations: "<<_Iterations<<std::endl;
+    std::cout<<"Population: "<<_PopulationSize<<std::endl;
+    std::cout<<"Crossing Prob: "<<_CrossingProbability<<std::endl;
+    std::cout<<"Mutation Prob: "<<_MutationProbability<<std::endl;
     std::cout<<"-------------------------"<<std::endl;
 }
 
 
 void Implementation::setKnapsackSize(std::istream &value) {
     std::string resultString = InputValidator::getInstance().getNumericString(value);
-    knapsackSize = std::stoul(resultString);
+    _KnapsackSize = std::stoul(resultString);
 }
 
 void Implementation::setPopulationSize(std::istream &value) {
     std::string resultString = InputValidator::getInstance().getNumericString(value);
-    populationSize = std::stoul(resultString);
+    _PopulationSize = std::stoul(resultString);
 }
 
 void Implementation::setCrossingProbability(std::istream &value) {
     std::string resultString = InputValidator::getInstance().getNumericString(value);
-    crossingProbability= std::stof(resultString);
+    _CrossingProbability= std::stof(resultString);
 }
 
 void Implementation::setMutationProbability(std::istream &value) {
     std::string resultString = InputValidator::getInstance().getNumericString(value);
-    mutationProbability= std::stof(resultString);
+    _MutationProbability= std::stof(resultString);
 }
 
 void Implementation::setIterations(std::istream &value) {
     std::string resultString = InputValidator::getInstance().getNumericString(value);
-    iterations = std::stoul(resultString);
+    _Iterations = std::stoul(resultString);
 }
 
 void Implementation::generateRandomWorkingSet(uint16_t amount, uint32_t min, uint32_t max) {
@@ -49,24 +49,24 @@ void Implementation::generateRandomWorkingSet(uint16_t amount, uint32_t min, uin
     std::uniform_int_distribution<> dis(min, max);
 
     for(int n=0; n<amount; n++) {
-        workingSet.getItems().emplace_back(KnapsackItem(dis(gen), dis(gen)));
+        _WorkingSet.getItems().emplace_back(KnapsackItem(dis(gen), dis(gen)));
     }
 }
 
 void Implementation::init(bool showProcess) {
 
-    Knapsack knapsack(knapsackSize);
+    Knapsack knapsack(_KnapsackSize);
 
-    algorithm.setPopulationSize(populationSize);
-    algorithm.setMutationProbability(mutationProbability);
-    algorithm.setCrossingProbability(crossingProbability);
-    algorithm.setKnapsack(&knapsack);
-    algorithm.setWorkingSet(&workingSet);
-    algorithm.setIterations(iterations);
+    _Algorithm.setPopulationSize(_PopulationSize);
+    _Algorithm.setMutationProbability(_MutationProbability);
+    _Algorithm.setCrossingProbability(_CrossingProbability);
+    _Algorithm.setKnapsack(&knapsack);
+    _Algorithm.setWorkingSet(&_WorkingSet);
+    _Algorithm.setIterations(_Iterations);
 
     if(showProcess) printGeneralInfo();
 
-    Instance supposedBest = algorithm.run(showProcess);
+    Instance supposedBest = _Algorithm.run(showProcess);
     _BestInstance = supposedBest.getFitness() > _BestInstance.getFitness() ? supposedBest : _BestInstance;
 }
 

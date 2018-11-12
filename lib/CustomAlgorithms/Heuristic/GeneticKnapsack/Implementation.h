@@ -26,13 +26,13 @@ public: \
 
 class Implementation {
 
-    GeneticAlgorithm algorithm;
-    WorkingSet workingSet;
+    GeneticAlgorithm _Algorithm;
+    WorkingSet _WorkingSet;
 
-    uint32_t knapsackSize;
-    uint16_t populationSize;
-    float crossingProbability, mutationProbability;
-    uint16_t iterations;
+    uint32_t _KnapsackSize;
+    uint16_t _PopulationSize;
+    float _CrossingProbability, _MutationProbability;
+    uint16_t _Iterations;
 
     Instance _BestInstance;
 

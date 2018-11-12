@@ -9,21 +9,21 @@
 
 Instance::Instance(Knapsack *knapsack, WorkingSet *workingSet, float mutationProbability) {
 
-    this->knapsack = knapsack;
-    this->workingSet = workingSet;
-    this->mutationProbability = mutationProbability;
+    this->_Knapsack = knapsack;
+    this->_WorkingSet = workingSet;
+    this->_MutationProbability = mutationProbability;
 
 
     uint64_t workingSetSize = workingSet->getItems().size();
 
     for(int n=0; n<workingSetSize; n++) {
-        genotype.emplace_back((bool)RandomWrapper::getRandom<short>(0, 2));
+        _Genotype.emplace_back((bool)RandomWrapper::getRandom<short>(0, 2));
     }
 }
 
 void Instance::showInstance() {
     std::cout<<"Instance: Genotype(";
-    for(bool b: genotype) {
+    for(bool b: _Genotype) {
         std::cout<<b;
     }
     std::cout<<"), Fitness("<<getFitness()<<")"<<std::endl;
@@ -31,30 +31,30 @@ void Instance::showInstance() {
 
 uint32_t Instance::getFitness() {
     uint32_t fitness = 0, size = 0;
-    for(uint64_t i=0; i<genotype.size(); i++) {
-        if(genotype[i]) {
-            fitness += workingSet->getItems()[i].getValue();
-            size += workingSet->getItems()[i].getSize();
+    for(uint64_t i=0; i<_Genotype.size(); i++) {
+        if(_Genotype[i]) {
+            fitness += _WorkingSet->getItems()[i].getValue();
+            size += _WorkingSet->getItems()[i].getSize();
         }
     }
-    if(this->knapsack->getSize() < size) return 0;
+    if(this->_Knapsack->getSize() < size) return 0;
     else return fitness;
 }
 
 void Instance::crossWith(Instance &other) {
-    uint64_t breakpoint = RandomWrapper::getRandom<uint64_t >(0, genotype.size() - 2);
+    uint64_t breakpoint = RandomWrapper::getRandom<uint64_t >(0, _Genotype.size() - 2);
 
     for(uint64_t i = 0; i<breakpoint; i++) {
-        genotype[i] = other.genotype[i];
+        _Genotype[i] = other._Genotype[i];
     }
 }
 
 void Instance::mutate(bool showProcess) {
-    for(uint64_t i = 0; i<genotype.size(); i++) {
+    for(uint64_t i = 0; i<_Genotype.size(); i++) {
         float prob = RandomWrapper::getRandomProbability();
-        if (prob <= this->mutationProbability) {
+        if (prob <= this->_MutationProbability) {
             if(showProcess) std::cout<<"Mutated "<<getGenotypeAsString()<<" to ";
-            genotype[i] = !genotype[i];
+            _Genotype[i] = !_Genotype[i];
             if(showProcess) std::cout<<getGenotypeAsString()<<" (Position: "<<i<<") "<<std::endl;
         }
     }
@@ -62,14 +62,14 @@ void Instance::mutate(bool showProcess) {
 
 std::string Instance::getGenotypeAsString() {
     std::string result = "";
-    for(bool b : genotype) {
+    for(bool b : _Genotype) {
         result += std::to_string(b);
     }
     return result;
 }
 
 Instance::Instance() {
-    genotype = std::vector<bool>(1, 0);
+    _Genotype = std::vector<bool>(1, 0);
     Knapsack k(0);
-    knapsack = &k;
+    _Knapsack = &k;
 }

@@ -14,9 +14,9 @@ int main() {
     try {
         Implementation knapsack;
 
-        knapsack.setKnapsackSize("5");
-        knapsack.setIterations("100");
-        knapsack.setPopulationSize("400");
+        knapsack.setKnapsackSize("500000");
+        knapsack.setIterations("2000");
+        knapsack.setPopulationSize("10");
         knapsack.setCrossingProbability("1");
         knapsack.setMutationProbability("0.05");
 
@@ -25,21 +25,6 @@ int main() {
         std::cout<<knapsack.getBestInstance().getFitness()<<" "<<knapsack.getBestInstance().getGenotypeAsString()<<std::endl;
         knapsack.printGeneralInfo();
 
-
-
-
-
-//    knapsack.setSize(5);
-//
-//    knapsack.setItems();
-//    knapsack.generateItems(4);
-//
-//    knapsackk.getAlgo().setPopulationSize(2);
-//    knapsack.getAlgo().setCrossingProbability(0.25);
-//    knapsack.getAlgo().setMutationProbability(0.1);
-//    knapsack.getAlgoo().setGenerationsAmount(2);
-//
-    //knapsack.init();
 
     } catch(InputValidationException &e) {
         std::cout<<e.what();

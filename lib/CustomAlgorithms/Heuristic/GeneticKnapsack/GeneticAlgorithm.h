@@ -25,7 +25,7 @@ class GeneticAlgorithm {
     Instance _BestInstance;
     void checkForNewFitness(Instance &other);
 
-    std::vector<Instance> population;
+    std::vector<Instance> _Population;
 
     void generatePopulation();
     uint64_t randomParentIndex();

@@ -8,8 +8,8 @@
 
 void GeneticAlgorithm::generatePopulation() {
     for(int n=0; n<_PopulationSize; n++) {
-        population.emplace_back(Instance(_Knapsack, _WorkingSet, _MutationProbability));
-        checkForNewFitness(population.back());
+        _Population.emplace_back(Instance(_Knapsack, _WorkingSet, _MutationProbability));
+        checkForNewFitness(_Population.back());
     }
 }
 
@@ -63,7 +63,7 @@ Instance GeneticAlgorithm::run(bool showProcess) {
 }
 
 void GeneticAlgorithm::showPopulation() {
-    for(Instance i: population) {
+    for(Instance i: _Population) {
         i.showInstance();
     }
 }
@@ -78,7 +78,7 @@ float GeneticAlgorithm::randomProbability() {
 
 Instance *GeneticAlgorithm::randomParent() {
     uint64_t p1i = randomParentIndex(), p2i = randomParentIndex();
-    Instance * p1 = &population[p1i], * p2 = &population[p2i];
+    Instance * p1 = &_Population[p1i], * p2 = &_Population[p2i];
     return p1->getFitness() >= p2->getFitness() ? p1 : p2;
 }
 
