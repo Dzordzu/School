@@ -12,8 +12,8 @@ class Implementation {
 
     GeneticAlgorithm algorithm;
 
-    uint32_t size;
-    uint32_t populationSize;
+    uint32_t knapsackSize;
+    uint16_t populationSize;
     float crossingProbablity, mutationProbability;
     uint16_t generationsAmount;
 

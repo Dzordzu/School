@@ -5,5 +5,8 @@
 #include "Implementation.h"
 
 void Implementation::init() {
-    t
+    algorithm.setPopulationSize(populationSize);
+    algorithm.setGenerationsAmount(generationsAmount);
+    algorithm.setMutationProbability(mutationProbability);
+    algorithm.setCrossingProbability(crossingProbablity);
 }
