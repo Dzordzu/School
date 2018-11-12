@@ -40,10 +40,10 @@ void Implementation::setIterations(std::istream &value) {
 void Implementation::generateRandomWorkingSet(uint16_t amount, uint32_t min, uint32_t max) {
     std::random_device rd;  //Will be used to obtain a seed for the random number engine
     std::mt19937 gen(rd()); //Standard mersenne_twister_engine seeded with rd()
-    std::uniform_int_distribution<> dis(1, 100);
+    std::uniform_int_distribution<> dis(min, max);
 
     for(int n=0; n<amount; n++) {
-
+        workingSet.getItems().emplace_back(KnapsackItem(dis(gen), dis(gen)));
     }
 }
 
