@@ -3,7 +3,7 @@
 //
 
 #include "KnapsackApp.h"
-#include "CustomAlgorithms/Heuristic/GeneticKnapsack/Implementation.h"
+#include "CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Implementation.h"
 
 void Apps::KnapsackApp() {
     try {
