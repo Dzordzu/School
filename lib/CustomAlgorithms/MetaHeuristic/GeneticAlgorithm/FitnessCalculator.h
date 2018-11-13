@@ -11,21 +11,45 @@ namespace CustomAlgorithms {
 
 
             /**
-             * Simple Interface that enables calculating fitness.
-             * Each object being representative of the AnalyzedType
-             * should be derivative of this class
+             * NOTE:
+             * Before reading this part you should be familiar with the difference
+             * between Instance and Individual
+             * @see README.md
+             *
+             * Simple Interface that enables calculating fitness for Instances
+             *
              *
              * NOTE:
              * It does NOT provide API for Fitness function
              * In order to get info about fitness function (as a stop condition),
-             * please refer to StopCondition.h
-             * @see StopCondition.h
+             * please refer to GeneticAlgorithm.h (StopConditionType, StopCondition)
+             * @see GeneticAlgorithm.h
              */
-             template <typename TargetObject>
-            class FitnessCalculator {
+             template <typename AnalyzedType>
+            class InstanceFitnessCalculator {
             public:
-                virtual float calculateFitness(TargetObject target) = 0;
+                virtual float calculateUnitFitness(AnalyzedType target) = 0;
             };
+
+            /**
+             * NOTE:
+             * Before reading this part you should be familiar with the difference
+             * between Instance and Individual
+             * @see README.md
+             *
+             * Simple Interface that enables calculating fitness for every Individual
+             *
+             *
+             * NOTE:
+             * It does NOT provide API for Fitness function
+             * In order to get info about fitness function (as a stop condition),
+             * please refer to GeneticAlgorithm.h (StopConditionType, StopCondition)
+             * @see GeneticAlgorithm.h
+             */
+             class IndividualFitnessCalculator {
+             public:
+                 virtual float calculateIndividualFitness(Individual individual) = 0;
+             };
 
         }
     }
