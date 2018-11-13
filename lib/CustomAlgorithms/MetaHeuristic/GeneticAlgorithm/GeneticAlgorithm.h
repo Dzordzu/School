@@ -25,12 +25,11 @@ namespace CustomAlgorithms {
                 GETSET(uint16_t , PopulationSize);
                 GETSET(float, CrossingProbability);
                 GETSET(float, MutationProbability);
-                GETSET(uint16_t, Iterations);
+                GETSET(StopCondition, _StopCondition);
 
                 /*
                  * TargetObject Specific
                  */
-                StopCondition<TargetObject> _StopCondition;
                 FitnessCalculator<TargetObject> _FitnessCalculator;
 
             public:
