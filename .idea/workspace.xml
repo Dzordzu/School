@@ -13,7 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="985f0cad-0331-44fb-ba81-f6055854d415" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -59,7 +59,7 @@
         <counts>
           <entry key="cpp" value="9756" />
           <entry key="gitignore" value="42" />
-          <entry key="h" value="13657" />
+          <entry key="h" value="13735" />
           <entry key="md" value="2443" />
           <entry key="txt" value="302" />
         </counts>
@@ -67,8 +67,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="302" />
-          <entry key="Doxygen file" value="65" />
-          <entry key="ObjectiveC" value="23348" />
+          <entry key="Doxygen file" value="66" />
+          <entry key="ObjectiveC" value="23425" />
           <entry key="PLAIN_TEXT" value="2485" />
         </counts>
       </usages-collector>
@@ -145,20 +145,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-270">
-              <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="43" />
+            <state relative-caret-position="502">
+              <caret line="84" column="68" lean-forward="true" selection-start-line="84" selection-start-column="68" selection-end-line="84" selection-end-column="68" />
               <folding>
                 <element signature="e#97#114#0" expanded="true" />
+                <element signature="e#303#326#0" expanded="true" />
                 <element signature="e#1426#1449#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
@@ -259,8 +260,8 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/GeneticAlgorithm.h" />
         <option value="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/FitnessCalculator.h" />
-        <option value="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h" />
         <option value="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/README.md" />
+        <option value="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h" />
       </list>
     </option>
   </component>
@@ -400,12 +401,12 @@
       <workItem from="1542054577141" duration="3589000" />
       <workItem from="1542105124407" duration="12412000" />
       <workItem from="1542139975678" duration="188000" />
-      <workItem from="1542140292553" duration="11266000" />
+      <workItem from="1542140292553" duration="11626000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81332000" />
+    <option name="totallyTimeSpent" value="81692000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -702,17 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="43" />
-          <folding>
-            <element signature="e#97#114#0" expanded="true" />
-            <element signature="e#1426#1449#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instance-vs-Individual.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -730,6 +720,18 @@
       <provider editor-type-id="text-editor">
         <state>
           <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="84" column="68" lean-forward="true" selection-start-line="84" selection-start-column="68" selection-end-line="84" selection-end-column="68" />
+          <folding>
+            <element signature="e#97#114#0" expanded="true" />
+            <element signature="e#303#326#0" expanded="true" />
+            <element signature="e#1426#1449#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
