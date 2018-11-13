@@ -38,6 +38,7 @@ namespace CustomAlgorithms {
 
             Instances<TargetObject> _Instances;
             Result<TargetObject> _Result;
+            Runner runner;
             Settings _Settings;
 
 
