@@ -13,7 +13,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="985f0cad-0331-44fb-ba81-f6055854d415" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/FitnessCalculator.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/FitnessCalculator.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -60,7 +59,7 @@
         <counts>
           <entry key="cpp" value="9756" />
           <entry key="gitignore" value="42" />
-          <entry key="h" value="11642" />
+          <entry key="h" value="12769" />
           <entry key="md" value="1178" />
           <entry key="txt" value="302" />
         </counts>
@@ -68,8 +67,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="302" />
-          <entry key="Doxygen file" value="39" />
-          <entry key="ObjectiveC" value="21359" />
+          <entry key="Doxygen file" value="51" />
+          <entry key="ObjectiveC" value="22474" />
           <entry key="PLAIN_TEXT" value="1220" />
         </counts>
       </usages-collector>
@@ -119,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/FitnessCalculator.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="18" column="70" selection-start-line="18" selection-start-column="70" selection-end-line="18" selection-end-column="70" />
+            <state relative-caret-position="405">
+              <caret line="33" column="15" lean-forward="true" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
               <folding>
                 <element signature="e#711#734#0" expanded="true" />
               </folding>
@@ -144,13 +143,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="255">
+              <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
               <folding>
                 <element signature="e#97#114#0" expanded="true" />
+                <element signature="e#303#326#0" expanded="true" />
+                <element signature="e#1426#1449#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -243,8 +244,8 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/README.md" />
         <option value="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/GeneticAlgorithm.h" />
-        <option value="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h" />
         <option value="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/FitnessCalculator.h" />
+        <option value="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h" />
       </list>
     </option>
   </component>
@@ -384,12 +385,12 @@
       <workItem from="1542054577141" duration="3589000" />
       <workItem from="1542105124407" duration="12412000" />
       <workItem from="1542139975678" duration="188000" />
-      <workItem from="1542140292553" duration="5810000" />
+      <workItem from="1542140292553" duration="8077000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75876000" />
+    <option name="totallyTimeSpent" value="78143000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -694,22 +695,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h">
+    <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/FitnessCalculator.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="405">
+          <caret line="33" column="15" lean-forward="true" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
           <folding>
-            <element signature="e#97#114#0" expanded="true" />
+            <element signature="e#711#734#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/FitnessCalculator.h">
+    <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="18" column="70" selection-start-line="18" selection-start-column="70" selection-end-line="18" selection-end-column="70" />
+        <state relative-caret-position="255">
+          <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
           <folding>
-            <element signature="e#711#734#0" expanded="true" />
+            <element signature="e#97#114#0" expanded="true" />
+            <element signature="e#303#326#0" expanded="true" />
+            <element signature="e#1426#1449#0" expanded="true" />
           </folding>
         </state>
       </provider>
