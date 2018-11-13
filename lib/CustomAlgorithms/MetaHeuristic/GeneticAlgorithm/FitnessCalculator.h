@@ -11,7 +11,11 @@ namespace CustomAlgorithms {
 
 
             /**
-             * Simple Interface that enables calculating fitness
+             * Simple Interface that enables calculating fitness.
+             * Each object being representative of the TargetObject
+             * should be derivative of this class
+             *
+             * NOTE:
              * It does NOT provide API for Fitness function
              * In order to get info about fitness function (as a stop condition),
              * please refer to StopCondition.h

@@ -29,31 +29,17 @@ namespace CustomAlgorithms {
                     GETrefSET(Probability, CrossingProbability);
                     GETrefSET(Probability, MutationProbability);
                     GETrefSET(StopCondition, _StopCondition);
-
-                    /*
-                     * TargetObject Specific
-                     */
-                    GETrefSET(FitnessCalculator, _FitnessCalculator);
                 };
 
-                Instances<TargetObject> _Instances;
+                Instances _Instances;
                 Result<TargetObject> _Result;
+                TargetObject x;
                 Executor _Exec;
                 Settings _Settings;
 
 
             public:
-                void init() {
-                    _Exec = ExecutorBuilder::getInstance()
-                        ->prepareNew()
-                        ->setInstances()
-                        ->setSettings()
-                        ->getExecutor();
-
-                    Result<TargetObject> supposed = _Exec();
-                    _Result = supposed > _Result ? supposed : _Result;
-
-                }
+                void init();
                 Result<TargetObject> getResult();
             };
         }
