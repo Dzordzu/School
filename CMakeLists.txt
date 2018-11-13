@@ -22,4 +22,6 @@ add_executable(
         lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/WorkingSet.h
         lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/RandomWrapper.h
         lib/KnapsackApp.cpp lib/KnapsackApp.h
+        lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/GeneticAlgorithm.cpp
+        lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/GeneticAlgorithm.h
 )
