@@ -11,41 +11,40 @@
 
 namespace CustomAlgorithms {
     namespace MetaHeuristics {
+        namespace GeneticAlgorithm {
 
-        /**
-         * Implementation of the Algorithm
-         */
-        template<typename TargetObject>
-        class GeneticAlgorithm {
 
-            class Settings {
-                /*
-                 * Algorithm Specific
-                 */
-                GETSET(uint16_t , PopulationSize);
-                GETSET(Probability, CrossingProbability);
-                GETSET(Probability, MutationProbability);
-                GETSET(StopCondition, _StopCondition);
+            /**
+            * Implementation of the Algorithm
+            */
+            template<typename TargetObject>
+            class GeneticAlgorithm {
 
-                /*
-                 * TargetObject Specific
-                 */
-                FitnessCalculator<TargetObject> _FitnessCalculator;
+                class Settings {
+                    /*
+                     * Algorithm Specific
+                     */
+                    GETrefSET(uint16_t , PopulationSize);
+                    GETrefSET(Probability, CrossingProbability);
+                    GETrefSET(Probability, MutationProbability);
+                    GETrefSET(StopCondition, _StopCondition);
+
+                        /*
+                         * TargetObject Specific
+                         */
+                    GETrefSET(FitnessCalculator, _FitnessCalculator);
+                };
+
+                Instances<TargetObject> _Instances;
+                Result<TargetObject> _Result;
+                Settings _Settings;
+
 
             public:
-                void setFitnessCalculator(FitnessCalculator<TargetObject> FitnessCalculator);
+                void init();
+                Result<TargetObject> getResult();
             };
-
-            Instances<TargetObject> _Instances;
-            Result<TargetObject> _Result;
-            Runner runner;
-            Settings _Settings;
-
-
-        public:
-            void init();
-            Result<TargetObject> getResult();
-        };
+        }
     }
 }
 

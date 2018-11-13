@@ -24,4 +24,4 @@ add_executable(
         lib/KnapsackApp.cpp lib/KnapsackApp.h
         lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/GeneticAlgorithm.cpp
         lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/GeneticAlgorithm.h
-        lib/GeneralGeneticAlgorithmApp.cpp lib/GeneralGeneticAlgorithmApp.h)
+        lib/GeneralGeneticAlgorithmApp.cpp lib/GeneralGeneticAlgorithmApp.h lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/FitnessCalculator.h)
