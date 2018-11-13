@@ -13,7 +13,7 @@
 namespace CustomAlgorithms {
     namespace MetaHeuristics {
         namespace GeneticAlgorithm {
-
+        }
     }
 }
 
