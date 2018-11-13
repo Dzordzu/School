@@ -17,10 +17,9 @@ namespace CustomAlgorithms {
              * please refer to StopCondition.h
              * @see StopCondition.h
              */
-             template<typename TargetObject>
             class FitnessCalculator {
             public:
-                virtual float calculateFitness(TargetObject ) = 0;
+                virtual float calculateFitness() = 0;
             };
 
         }
