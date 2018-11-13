@@ -12,7 +12,7 @@ namespace CustomAlgorithms {
 
             /**
              * Simple Interface that enables calculating fitness.
-             * Each object being representative of the TargetObject
+             * Each object being representative of the AnalyzedType
              * should be derivative of this class
              *
              * NOTE:
