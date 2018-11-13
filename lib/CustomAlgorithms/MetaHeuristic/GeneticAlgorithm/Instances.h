@@ -50,13 +50,37 @@ namespace CustomAlgorithms {
             template <typename AnalyzedType>
             class InstancesManager {
                 /**
-                 * Vector of instances. Should contain 
+                 * Vector of instances. Should contain every instance that is examined
+                 * by single Genetic Algorithm
                  */
                 std::vector<Instance<AnalyzedType>> _Instances;
+                /**
+                 * Handles default fitness calculator for its members (instances)
+                 */
                 InstanceFitnessCalculator<AnalyzedType> _DefaultInstanceFitnessCalculator;
             public:
+                /**
+                 * Changes default calculator.
+                 *
+                 * NOTE:
+                 * Instance handles pointer to this value,
+                 * so changing it either during runtime, or during process of inserting instances
+                 * can lead to unexpected results. You SHOULD ALWAYS predefine default Instance Fitness Calculator
+                 * before inserting instances in order to keep algorithm consistency and stability
+                 * @param calculator
+                 */
                 void setDefaultInstanceFitnessCalculator(InstanceFitnessCalculator<AnalyzedType> calculator);
-                void pushBack();
+                /**
+                 * Pushes Instance with a default Instance Fitness Calculator to the manager
+                 * @param value
+                 */
+                void pushBack(AnalyzedType * value);
+                /**
+                 * Returns reference to the vector of the instances
+                 *
+                 * NOTE:
+                 * You SHOULD avoid using this method, unless you are going to use default Instance Fitness Calculator
+                 */
                 void getInstances();
             };
         }
