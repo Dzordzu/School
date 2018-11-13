@@ -30,19 +30,30 @@ namespace CustomAlgorithms {
                     GETrefSET(Probability, MutationProbability);
                     GETrefSET(StopCondition, _StopCondition);
 
-                        /*
-                         * TargetObject Specific
-                         */
+                    /*
+                     * TargetObject Specific
+                     */
                     GETrefSET(FitnessCalculator, _FitnessCalculator);
                 };
 
                 Instances<TargetObject> _Instances;
                 Result<TargetObject> _Result;
+                Executor _Exec;
                 Settings _Settings;
 
 
             public:
-                void init();
+                void init() {
+                    _Exec = ExecutorBuilder::getInstance()
+                        ->prepareNew()
+                        ->setInstances()
+                        ->setSettings()
+                        ->getExecutor();
+
+                    Result<TargetObject> supposed = _Exec();
+                    _Result = supposed > _Result ? supposed : _Result;
+
+                }
                 Result<TargetObject> getResult();
             };
         }
