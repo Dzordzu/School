@@ -22,7 +22,7 @@ namespace CustomAlgorithms {
                 Genotype(InstancesManager<AnalyzedType> &manager);
                 void mutate(float mutationProbability = 1);
                 void crossWith(Genotype &genotype);
-                std::vector<bool> get();
+                std::vector<bool> getGenotype();
                 std::string toString();
             };
         }

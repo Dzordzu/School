@@ -13,7 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="985f0cad-0331-44fb-ba81-f6055854d415" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Genotype.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Genotype.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -60,7 +60,7 @@
         <counts>
           <entry key="cpp" value="9756" />
           <entry key="gitignore" value="42" />
-          <entry key="h" value="15736" />
+          <entry key="h" value="15744" />
           <entry key="md" value="2443" />
           <entry key="txt" value="311" />
         </counts>
@@ -69,7 +69,7 @@
         <counts>
           <entry key="CMakeLists.txt" value="311" />
           <entry key="Doxygen file" value="101" />
-          <entry key="ObjectiveC" value="25391" />
+          <entry key="ObjectiveC" value="25399" />
           <entry key="PLAIN_TEXT" value="2485" />
         </counts>
       </usages-collector>
@@ -100,11 +100,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+            <state relative-caret-position="383">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="e#99#129#0" expanded="true" />
                 <element signature="e#418#441#0" expanded="true" />
@@ -127,11 +127,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Genotype.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="360">
+              <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
               <folding>
                 <element signature="e#95#112#0" expanded="true" />
                 <element signature="e#360#383#0" expanded="true" />
@@ -219,8 +219,8 @@
         <option value="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/GeneticAlgorithm.h" />
         <option value="$PROJECT_DIR$/lib/RandomWrapper/RandomWrapper.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Genotype.h" />
         <option value="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.h" />
+        <option value="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Genotype.h" />
       </list>
     </option>
   </component>
@@ -361,12 +361,12 @@
       <workItem from="1542105124407" duration="12412000" />
       <workItem from="1542139975678" duration="188000" />
       <workItem from="1542140292553" duration="12268000" />
-      <workItem from="1542185653752" duration="6510000" />
+      <workItem from="1542185653752" duration="6697000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88844000" />
+    <option name="totallyTimeSpent" value="89031000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -733,27 +733,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#99#129#0" expanded="true" />
+            <element signature="e#418#441#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Genotype.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Genotype.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="360">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
           <folding>
             <element signature="e#95#112#0" expanded="true" />
             <element signature="e#360#383#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-          <folding>
-            <element signature="e#99#129#0" expanded="true" />
-            <element signature="e#418#441#0" expanded="true" />
           </folding>
         </state>
       </provider>
