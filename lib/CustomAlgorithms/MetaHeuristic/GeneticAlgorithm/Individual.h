@@ -15,6 +15,16 @@ namespace CustomAlgorithms {
                 Genotype _Genotype;
                 IndividualFitnessCalculator * _FitnessCalculator;
                 float _Fitness;
+
+                /**
+                 * Pointers to the probabilities in the algorithm
+                 */
+                float * _MutationProbability;
+                float * _CrossingProbability;
+
+            public:
+                void mutate();
+                Individual crossWith();
             };
         }
     }
