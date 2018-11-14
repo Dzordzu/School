@@ -7,6 +7,7 @@
 
 #include "../../../Macros/GETSET.h"
 #include "FitnessCalculator.h"
+#include "Instances.h"
 #include <vector>
 #include <cstdint>
 

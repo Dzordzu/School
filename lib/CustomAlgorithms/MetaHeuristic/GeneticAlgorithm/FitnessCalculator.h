@@ -28,7 +28,7 @@ namespace CustomAlgorithms {
              template <typename AnalyzedType>
             class InstanceFitnessCalculator {
             public:
-                virtual float calculateUnitFitness(AnalyzedType target) = 0;
+                virtual float calculateUnitFitness(AnalyzedType &target) = 0;
             };
 
             /**
@@ -48,7 +48,7 @@ namespace CustomAlgorithms {
              */
              class IndividualFitnessCalculator {
              public:
-                 virtual float calculateIndividualFitness(Individual individual) = 0;
+                 virtual float calculateIndividualFitness(Genotype &genotype) = 0;
              };
 
         }

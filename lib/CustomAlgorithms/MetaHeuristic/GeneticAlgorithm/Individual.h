@@ -5,10 +5,20 @@
 #ifndef SCHOOL_INDIVIDUAL_H
 #define SCHOOL_INDIVIDUAL_H
 
+#include "FitnessCalculator.h"
 
-class Individual {
+namespace CustomAlgorithms {
+    namespace MetaHeuristics {
+        namespace GeneticAlgorithm {
 
-};
+            class Individual {
+                Genotype _Genotype;
+                IndividualFitnessCalculator * _FitnessCalculator;
+                float _Fitness;
+            };
+        }
+    }
+}
 
 
 #endif //SCHOOL_INDIVIDUAL_H
