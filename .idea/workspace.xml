@@ -60,7 +60,7 @@
         <counts>
           <entry key="cpp" value="9756" />
           <entry key="gitignore" value="42" />
-          <entry key="h" value="13740" />
+          <entry key="h" value="13767" />
           <entry key="md" value="2443" />
           <entry key="txt" value="302" />
         </counts>
@@ -68,8 +68,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="302" />
-          <entry key="Doxygen file" value="66" />
-          <entry key="ObjectiveC" value="23430" />
+          <entry key="Doxygen file" value="67" />
+          <entry key="ObjectiveC" value="23456" />
           <entry key="PLAIN_TEXT" value="2485" />
         </counts>
       </usages-collector>
@@ -81,7 +81,7 @@
           <entry key="gitignore" value="1" />
           <entry key="h" value="90" />
           <entry key="md" value="5" />
-          <entry key="png" value="2" />
+          <entry key="png" value="3" />
           <entry key="tcc" value="1" />
           <entry key="txt" value="7" />
           <entry key="vector" value="1" />
@@ -91,7 +91,7 @@
         <counts>
           <entry key="CMakeLists.txt" value="7" />
           <entry key="Disassembly" value="4" />
-          <entry key="Image" value="2" />
+          <entry key="Image" value="3" />
           <entry key="ObjectiveC" value="185" />
           <entry key="PLAIN_TEXT" value="7" />
         </counts>
@@ -149,8 +149,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+            <state relative-caret-position="187">
+              <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
               <folding>
                 <element signature="e#97#114#0" expanded="true" />
                 <element signature="e#303#326#0" expanded="true" />
@@ -402,12 +402,12 @@
       <workItem from="1542105124407" duration="12412000" />
       <workItem from="1542139975678" duration="188000" />
       <workItem from="1542140292553" duration="12268000" />
-      <workItem from="1542185653752" duration="1393000" />
+      <workItem from="1542185653752" duration="2074000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83727000" />
+    <option name="totallyTimeSpent" value="84408000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -649,9 +649,6 @@
     <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instance-vs-Individual.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/KnapsackApp.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -724,10 +721,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instance-vs-Individual.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+        <state relative-caret-position="187">
+          <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
           <folding>
             <element signature="e#97#114#0" expanded="true" />
             <element signature="e#303#326#0" expanded="true" />

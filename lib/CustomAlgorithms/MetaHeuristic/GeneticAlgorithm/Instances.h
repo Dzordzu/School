@@ -13,6 +13,11 @@ namespace CustomAlgorithms {
     namespace MetaHeuristics {
         namespace GeneticAlgorithm {
 
+            /**
+             * Single element handling pointer to the value of Analyzed type, its fitness calculator
+             * and its fitness
+             * @tparam AnalyzedType
+             */
             template <typename AnalyzedType>
             class Instance {
                 /**
@@ -47,12 +52,13 @@ namespace CustomAlgorithms {
                  void isUsable();
             };
 
+            /**
+             * Handles instances. Should contain every instance that is examined
+             * by single Genetic Algorithm
+             * @tparam AnalyzedType
+             */
             template <typename AnalyzedType>
             class InstancesManager {
-                /**
-                 * Vector of instances. Should contain every instance that is examined
-                 * by single Genetic Algorithm
-                 */
                 std::vector<Instance<AnalyzedType>> _Instances;
                 /**
                  * Handles default fitness calculator for its members (instances)
