@@ -14,7 +14,7 @@ namespace CustomAlgorithms {
         namespace GeneticAlgorithm {
 
             /**
-             * Single element handling pointer to the value of Analyzed type, its fitness calculator
+             * Single element handling pointer to the value of Analyzed type
              * and its fitness
              * @tparam AnalyzedType
              */

@@ -149,8 +149,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="43" column="111" selection-start-line="43" selection-start-column="111" selection-end-line="43" selection-end-column="111" />
+            <state relative-caret-position="60">
+              <caret line="16" column="76" selection-start-line="16" selection-start-column="76" selection-end-line="16" selection-end-column="76" />
               <folding>
                 <element signature="e#97#114#0" expanded="true" />
                 <element signature="e#303#326#0" expanded="true" />
@@ -402,12 +402,12 @@
       <workItem from="1542105124407" duration="12412000" />
       <workItem from="1542139975678" duration="188000" />
       <workItem from="1542140292553" duration="12268000" />
-      <workItem from="1542185653752" duration="2794000" />
+      <workItem from="1542185653752" duration="2898000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85128000" />
+    <option name="totallyTimeSpent" value="85232000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -726,8 +726,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="43" column="111" selection-start-line="43" selection-start-column="111" selection-end-line="43" selection-end-column="111" />
+        <state relative-caret-position="60">
+          <caret line="16" column="76" selection-start-line="16" selection-start-column="76" selection-end-line="16" selection-end-column="76" />
           <folding>
             <element signature="e#97#114#0" expanded="true" />
             <element signature="e#303#326#0" expanded="true" />
