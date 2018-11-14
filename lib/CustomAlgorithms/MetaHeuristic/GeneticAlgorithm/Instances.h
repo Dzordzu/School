@@ -79,7 +79,7 @@ namespace CustomAlgorithms {
                  * Returns reference to the vector of the instances
                  *
                  * NOTE:
-                 * You SHOULD avoid using this method, if you are going to use default Instance Fitness Calculator.
+                 * You SHOULD avoid using this method, if you are going to use the default Instance Fitness Calculator.
                  * Otherwise you HAVE TO use this method
                  */
                 std::vector<Instance<AnalyzedType>> *getInstances();
