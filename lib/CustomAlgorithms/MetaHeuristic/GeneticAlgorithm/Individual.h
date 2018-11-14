@@ -7,6 +7,7 @@
 
 #include "FitnessCalculator.h"
 #include "Instances.h"
+#include <array>
 
 namespace CustomAlgorithms {
     namespace MetaHeuristics {
@@ -19,6 +20,9 @@ namespace CustomAlgorithms {
              template <typename AnalyzedType>
             class Individual {
                 Genotype _Genotype;
+                /**
+                 * Calculates Fitness from Genotype
+                 */
                 IndividualFitnessCalculator * _FitnessCalculator;
                 float _Fitness;
                 bool usable;
@@ -32,12 +36,29 @@ namespace CustomAlgorithms {
 
             public:
                 /**
-                 * Automatically sets
+                 * Empty constructor creates unusable object
                  */
                 Individual();
+                /**
+                 * Default constructor for Individual
+                 * @param manager
+                 * @param mutationProbability
+                 * @param crossingProbability
+                 */
                 Individual(InstancesManager<AnalyzedType> * manager, float &mutationProbability, float &crossingProbability);
+                /**
+                 * Mutates genotype of the Individual
+                 */
                 void mutate();
-                Individual crossWith();
+                /**
+                 * Returns two new Individuals created in the process of crossing
+                 * @return IndividualsArray
+                 */
+                std::array<Individual<AnalyzedType>, 2> crossWith(Individual<AnalyzedType> other);
+                /**
+                 * Defines if Individual is usable
+                 * @return usable
+                 */
                 bool isUsable();
             };
         }
