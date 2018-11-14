@@ -17,7 +17,8 @@ namespace CustomAlgorithms {
                 float _Fitness;
 
                 /**
-                 * Pointers to the probabilities in the algorithm
+                 * Pointers to the probabilities declared in
+                 * the Genetic Algorithm
                  */
                 float * _MutationProbability;
                 float * _CrossingProbability;
