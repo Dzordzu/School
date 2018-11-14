@@ -60,7 +60,7 @@
         <counts>
           <entry key="cpp" value="9756" />
           <entry key="gitignore" value="42" />
-          <entry key="h" value="13767" />
+          <entry key="h" value="14144" />
           <entry key="md" value="2443" />
           <entry key="txt" value="302" />
         </counts>
@@ -68,8 +68,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="302" />
-          <entry key="Doxygen file" value="67" />
-          <entry key="ObjectiveC" value="23456" />
+          <entry key="Doxygen file" value="77" />
+          <entry key="ObjectiveC" value="23823" />
           <entry key="PLAIN_TEXT" value="2485" />
         </counts>
       </usages-collector>
@@ -149,8 +149,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
+            <state relative-caret-position="405">
+              <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
               <folding>
                 <element signature="e#97#114#0" expanded="true" />
                 <element signature="e#303#326#0" expanded="true" />
@@ -402,12 +402,12 @@
       <workItem from="1542105124407" duration="12412000" />
       <workItem from="1542139975678" duration="188000" />
       <workItem from="1542140292553" duration="12268000" />
-      <workItem from="1542185653752" duration="2074000" />
+      <workItem from="1542185653752" duration="2720000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84408000" />
+    <option name="totallyTimeSpent" value="85054000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -726,8 +726,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
+        <state relative-caret-position="405">
+          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
           <folding>
             <element signature="e#97#114#0" expanded="true" />
             <element signature="e#303#326#0" expanded="true" />
