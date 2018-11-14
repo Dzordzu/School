@@ -6,6 +6,7 @@
 #define SCHOOL_INDIVIDUAL_H
 
 #include "FitnessCalculator.h"
+#include "Instances.h"
 
 namespace CustomAlgorithms {
     namespace MetaHeuristics {
@@ -15,6 +16,7 @@ namespace CustomAlgorithms {
              * Individual is a single member of the one generation in
              * Genetic Algorithm
              */
+             template <typename AnalyzedType>
             class Individual {
                 Genotype _Genotype;
                 IndividualFitnessCalculator * _FitnessCalculator;
@@ -33,7 +35,7 @@ namespace CustomAlgorithms {
                  * Automatically sets
                  */
                 Individual();
-                Individual(float &mutationProbability, float &crossingProbability);
+                Individual(InstancesManager<AnalyzedType> * manager, float &mutationProbability, float &crossingProbability);
                 void mutate();
                 Individual crossWith();
                 bool isUsable();
