@@ -13,10 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="985f0cad-0331-44fb-ba81-f6055854d415" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/RandomWrapper/RandomWrapper.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/RandomWrapper/RandomWrapper.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -63,7 +61,7 @@
         <counts>
           <entry key="cpp" value="9756" />
           <entry key="gitignore" value="42" />
-          <entry key="h" value="14772" />
+          <entry key="h" value="15045" />
           <entry key="md" value="2443" />
           <entry key="txt" value="308" />
         </counts>
@@ -71,8 +69,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="308" />
-          <entry key="Doxygen file" value="86" />
-          <entry key="ObjectiveC" value="24442" />
+          <entry key="Doxygen file" value="89" />
+          <entry key="ObjectiveC" value="24712" />
           <entry key="PLAIN_TEXT" value="2485" />
         </counts>
       </usages-collector>
@@ -82,20 +80,20 @@
           <entry key="School (disassembly)" value="4" />
           <entry key="cpp" value="97" />
           <entry key="gitignore" value="1" />
-          <entry key="h" value="97" />
+          <entry key="h" value="98" />
           <entry key="md" value="5" />
           <entry key="png" value="3" />
           <entry key="tcc" value="1" />
-          <entry key="txt" value="8" />
+          <entry key="txt" value="9" />
           <entry key="vector" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CMakeLists.txt" value="8" />
+          <entry key="CMakeLists.txt" value="9" />
           <entry key="Disassembly" value="4" />
           <entry key="Image" value="3" />
-          <entry key="ObjectiveC" value="196" />
+          <entry key="ObjectiveC" value="197" />
           <entry key="PLAIN_TEXT" value="7" />
         </counts>
       </usages-collector>
@@ -103,61 +101,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/GeneticAlgorithm.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-              <folding>
-                <element signature="e#111#146#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Settings.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-              <folding>
-                <element signature="e#95#130#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/RandomWrapper/RandomWrapper.cpp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/RandomWrapper/RandomWrapper.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-              <folding>
-                <element signature="e#374#386#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/RandomWrapper.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" selection-start-line="8" selection-end-line="23" selection-end-column="2" />
+            <state relative-caret-position="225">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -225,11 +173,11 @@
         <option value="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/README.md" />
         <option value="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h" />
         <option value="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/FitnessCalculator.h" />
-        <option value="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Settings.h" />
         <option value="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/GeneticAlgorithm.h" />
         <option value="$PROJECT_DIR$/lib/RandomWrapper/RandomWrapper.h" />
+        <option value="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.h" />
       </list>
     </option>
   </component>
@@ -376,12 +324,12 @@
       <workItem from="1542105124407" duration="12412000" />
       <workItem from="1542139975678" duration="188000" />
       <workItem from="1542140292553" duration="12268000" />
-      <workItem from="1542185653752" duration="4514000" />
+      <workItem from="1542185653752" duration="5222000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86848000" />
+    <option name="totallyTimeSpent" value="87556000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -417,6 +365,28 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.32930514" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28096676" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.2704918" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37540984" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="8" visible="true" weight="0.28360656" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32938856" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.3295082" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32930514" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -678,30 +648,6 @@
     <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/GeneticAlgorithm.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#111#146#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Settings.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -709,13 +655,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Settings.h">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#95#130#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="510">
+          <caret line="34" column="77" selection-start-line="34" selection-start-column="77" selection-end-line="34" selection-end-column="77" />
         </state>
       </provider>
     </entry>
@@ -731,11 +674,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/RandomWrapper/RandomWrapper.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="510">
+          <caret line="34" column="87" selection-start-line="34" selection-start-column="87" selection-end-line="34" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/GeneticAlgorithm.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-135">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
-            <element signature="e#374#386#0" expanded="true" />
+            <element signature="e#111#146#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Settings.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-308">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#95#130#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
         </state>
       </provider>
     </entry>

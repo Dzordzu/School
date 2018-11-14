@@ -11,10 +11,15 @@ namespace CustomAlgorithms {
     namespace MetaHeuristics {
         namespace GeneticAlgorithm {
 
+            /**
+             * Individual is a single member of the one generation in
+             * Genetic Algorithm
+             */
             class Individual {
                 Genotype _Genotype;
                 IndividualFitnessCalculator * _FitnessCalculator;
                 float _Fitness;
+                bool usable;
 
                 /**
                  * Pointers to the probabilities declared in
@@ -24,8 +29,14 @@ namespace CustomAlgorithms {
                 float * _CrossingProbability;
 
             public:
+                /**
+                 * Automatically sets
+                 */
+                Individual();
+                Individual(float &mutationProbability, float &crossingProbability);
                 void mutate();
                 Individual crossWith();
+                bool isUsable();
             };
         }
     }
