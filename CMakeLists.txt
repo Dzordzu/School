@@ -30,4 +30,6 @@ add_executable(
         lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h
         lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.cpp
         lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.h
+        lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Settings.cpp
+        lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Settings.h
 )
