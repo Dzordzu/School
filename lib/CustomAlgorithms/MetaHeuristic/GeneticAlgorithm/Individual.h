@@ -7,6 +7,7 @@
 
 #include "FitnessCalculator.h"
 #include "Instances.h"
+#include "Genotype.h"
 #include <array>
 
 namespace CustomAlgorithms {
@@ -19,7 +20,7 @@ namespace CustomAlgorithms {
              */
              template <typename AnalyzedType>
             class Individual {
-                Genotype _Genotype;
+                Genotype<AnalyzedType> _Genotype;
                 /**
                  * Calculates Fitness from Genotype
                  */
