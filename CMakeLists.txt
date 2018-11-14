@@ -32,4 +32,4 @@ add_executable(
         lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.h
         lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Settings.cpp
         lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Settings.h
-)
+        lib/RandomWrapper/RandomWrapper.cpp lib/RandomWrapper/RandomWrapper.h)
