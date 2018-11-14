@@ -28,7 +28,7 @@ namespace CustomAlgorithms {
             public:
                 /**
                  * Simple constructor of the Instance is supported
-                 * Them Fitness is set to 0, isUsable is set to false and pointer of the value
+                 * Then Fitness is set to 0, isUsable is set to false and pointer of the value
                  * is set to the null
                  */
                 Instance();
