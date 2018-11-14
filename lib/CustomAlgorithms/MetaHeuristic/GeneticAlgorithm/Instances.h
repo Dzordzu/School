@@ -21,14 +21,6 @@ namespace CustomAlgorithms {
             template <typename AnalyzedType>
             class Instance {
                 /**
-                 * Calculates fitness for the single instance.
-                 * Why to handle such a thing?
-                 * The thing is that it is used once: at the initialization
-                 * On the other hand it is passed to the generated child, so it should be
-                 * stored somehow
-                 */
-                InstanceFitnessCalculator<AnalyzedType> * _Calculator;
-                /**
                  * Handles pointer to the actual value
                  */
                 GET(AnalyzedType *, _Value);
@@ -50,7 +42,6 @@ namespace CustomAlgorithms {
                 /**
                  * Returns true if and only if all of the following are fulfilled:
                  *  - Pointer to the value has been already set (it should be set only once - at the beginning)
-                 *  - Calculator is set
                  *  - Object wasn't created with Instance() constructor
                  */
                  void isUsable();
