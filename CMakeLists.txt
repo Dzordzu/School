@@ -3,6 +3,8 @@ project(School)
 
 set(CMAKE_CXX_STANDARD 14)
 
+include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
+
 add_executable(
         School main.cpp lib/Macros/GETSET.h
         lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Implementation.cpp
