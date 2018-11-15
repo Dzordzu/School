@@ -7,6 +7,7 @@
 
 #include <string>
 #include <vector>
+#include <array>
 #include "Instances.h"
 
 namespace CustomAlgorithms {
@@ -21,7 +22,7 @@ namespace CustomAlgorithms {
             public:
                 Genotype(InstancesManager<AnalyzedType> &manager);
                 void mutate(float mutationProbability = 1);
-                Genotype crossWith(Genotype &genotype);
+                std::array<Genotype<AnalyzedType>, 2> crossWith(Genotype &genotype);
                 std::vector<bool> getGenotype();
                 std::string toString();
             };
