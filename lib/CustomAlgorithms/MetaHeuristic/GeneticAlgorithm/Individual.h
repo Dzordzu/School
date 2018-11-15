@@ -5,7 +5,6 @@
 #ifndef SCHOOL_INDIVIDUAL_H
 #define SCHOOL_INDIVIDUAL_H
 
-#include "FitnessCalculator.h"
 #include "Instances.h"
 #include "Genotype.h"
 #include <array>
@@ -13,6 +12,27 @@
 namespace CustomAlgorithms {
     namespace MetaHeuristics {
         namespace GeneticAlgorithm {
+
+            /**
+             * NOTE:
+             * Before reading this part you should be familiar with the difference
+             * between Instance and Individual
+             * @see README.md
+             *
+             * Simple Interface that enables calculating fitness for every Individual
+             *
+             *
+             * NOTE:
+             * It does NOT provide API for Fitness function
+             * In order to get info about fitness function (as a stop condition),
+             * please refer to GeneticAlgorithm.h (StopConditionType, StopCondition)
+             * @see GeneticAlgorithm.h
+             */
+            template <typename AnalyzedType>
+            class IndividualFitnessCalculator {
+            public:
+                virtual float calculateIndividualFitness(Genotype<AnalyzedType> &genotype) = 0;
+            };
 
             /**
              * Individual is a single member of the one generation in
@@ -24,7 +44,7 @@ namespace CustomAlgorithms {
                 /**
                  * Calculates Fitness from Genotype
                  */
-                IndividualFitnessCalculator * _FitnessCalculator;
+                IndividualFitnessCalculator<AnalyzedType> * _FitnessCalculator;
                 float _Fitness;
                 bool usable;
 

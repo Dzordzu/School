@@ -6,7 +6,6 @@
 #define SCHOOL_GENETICALGORITHM_H
 
 #include "../../../Macros/GETSET.h"
-#include "FitnessCalculator.h"
 #include "Instances.h"
 #include "Settings.h"
 #include <vector>

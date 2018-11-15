@@ -7,11 +7,31 @@
 
 #include <vector>
 #include "../../../Macros/GETSET.h"
-#include "FitnessCalculator.h";
 
 namespace CustomAlgorithms {
     namespace MetaHeuristics {
         namespace GeneticAlgorithm {
+
+            /**
+             * NOTE:
+             * Before reading this part you should be familiar with the difference
+             * between Instance and Individual
+             * @see README.md
+             *
+             * Simple Interface that enables calculating fitness for Instances
+             *
+             *
+             * NOTE:
+             * It does NOT provide API for Fitness function
+             * In order to get info about fitness function (as a stop condition),
+             * please refer to GeneticAlgorithm.h (StopConditionType, StopCondition)
+             * @see GeneticAlgorithm.h
+             */
+            template <typename AnalyzedType>
+            class InstanceFitnessCalculator {
+            public:
+                virtual float calculateUnitFitness(AnalyzedType &target) = 0;
+            };
 
             /**
              * Single element handling pointer to the value of Analyzed type

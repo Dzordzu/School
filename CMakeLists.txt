@@ -25,7 +25,6 @@ add_executable(
         lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/GeneticAlgorithm.h
         lib/GeneralGeneticAlgorithmApp.cpp
         lib/GeneralGeneticAlgorithmApp.h
-        lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/FitnessCalculator.h
         lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.cpp
         lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h
         lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.cpp
