@@ -21,7 +21,7 @@ namespace CustomAlgorithms {
             public:
                 Genotype(InstancesManager<AnalyzedType> &manager);
                 void mutate(float mutationProbability = 1);
-                void crossWith(Genotype &genotype);
+                Genotype crossWith(Genotype &genotype);
                 std::vector<bool> getGenotype();
                 std::string toString();
             };
