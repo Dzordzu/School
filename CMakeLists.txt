@@ -15,7 +15,6 @@ configure_file (
 # Include libs
 include_directories (
         "${PROJECT_SOURCE_DIR}/project/GeneticAlgorithm"
-        "${PROJECT_SOURCE_DIR}/project/GeneticKnapsack"
         "${PROJECT_SOURCE_DIR}/project/InputValidator"
         "${PROJECT_SOURCE_DIR}/project/Macros"
         "${PROJECT_SOURCE_DIR}/project/RandomWrapper"
@@ -23,24 +22,6 @@ include_directories (
 
 add_subdirectory(project/InputValidator)
 add_subdirectory(project/RandomWrapper)
-add_subdirectory(project/GeneticKnapsack)
-
-add_executable(
-        # Project name
-        project-genetic-knapsack
-        # Main function
-        runnable/GeneticKnapsack/GeneticKnapsack.cpp
-        # Included apps
-        runnable/GeneticKnapsack/KnapsackApp.cpp
-        runnable/GeneticKnapsack/KnapsackApp.h
-        # All project files
-        ## Macros
-        project/Macros/GETSET.h
-)
-
-target_link_libraries(project-genetic-knapsack
-    GeneticKnapsack
-)
 
 add_executable(
         # Project name
