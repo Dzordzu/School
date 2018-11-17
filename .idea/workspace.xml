@@ -13,43 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="985f0cad-0331-44fb-ba81-f6055854d415" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/GeneticAlgorithm.h" beforeDir="false" afterPath="$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/GeneticAlgorithm.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Genotype.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Genotype.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Genotype.h" beforeDir="false" afterPath="$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Genotype.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.h" beforeDir="false" afterPath="$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instance-vs-Individual.png" beforeDir="false" afterPath="$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instance-vs-Individual.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h" beforeDir="false" afterPath="$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Settings.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Settings.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Settings.h" beforeDir="false" afterPath="$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Settings.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/GeneticAlgorithm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/GeneticAlgorithm.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/GeneticAlgorithm.h" beforeDir="false" afterPath="$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/GeneticAlgorithm.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Implementation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Implementation.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Implementation.h" beforeDir="false" afterPath="$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Implementation.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Instance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Instance.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Instance.h" beforeDir="false" afterPath="$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Instance.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Knapsack.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Knapsack.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Knapsack.h" beforeDir="false" afterPath="$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Knapsack.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/KnapsackItem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/KnapsackItem.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/KnapsackItem.h" beforeDir="false" afterPath="$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/KnapsackItem.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/RandomWrapper.h" beforeDir="false" afterPath="$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/RandomWrapper.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/WorkingSet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/WorkingSet.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/WorkingSet.h" beforeDir="false" afterPath="$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/WorkingSet.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/GeneralGeneticAlgorithmApp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project/GeneralGeneticAlgorithmApp.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/GeneralGeneticAlgorithmApp.h" beforeDir="false" afterPath="$PROJECT_DIR$/project/GeneralGeneticAlgorithmApp.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/InputValidator/InputValidationException.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project/InputValidator/InputValidationException.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/InputValidator/InputValidationException.h" beforeDir="false" afterPath="$PROJECT_DIR$/project/InputValidator/InputValidationException.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/InputValidator/InputValidator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project/InputValidator/InputValidator.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/InputValidator/InputValidator.h" beforeDir="false" afterPath="$PROJECT_DIR$/project/InputValidator/InputValidator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/KnapsackApp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project/KnapsackApp.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/KnapsackApp.h" beforeDir="false" afterPath="$PROJECT_DIR$/project/KnapsackApp.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Macros/GETSET.h" beforeDir="false" afterPath="$PROJECT_DIR$/project/Macros/GETSET.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/RandomWrapper/RandomWrapper.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project/RandomWrapper/RandomWrapper.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/RandomWrapper/RandomWrapper.h" beforeDir="false" afterPath="$PROJECT_DIR$/project/RandomWrapper/RandomWrapper.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -122,13 +86,13 @@
           <entry key="md" value="5" />
           <entry key="png" value="3" />
           <entry key="tcc" value="1" />
-          <entry key="txt" value="10" />
+          <entry key="txt" value="12" />
           <entry key="vector" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CMakeLists.txt" value="10" />
+          <entry key="CMakeLists.txt" value="12" />
           <entry key="Disassembly" value="4" />
           <entry key="Image" value="3" />
           <entry key="ObjectiveC" value="217" />
@@ -139,68 +103,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/GeneticAlgorithm.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-              <folding>
-                <element signature="e#111#146#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="80" column="33" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
-              <folding>
-                <element signature="e#99#121#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Genotype.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-              <folding>
-                <element signature="e#95#112#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Settings.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
-              <folding>
-                <element signature="e#97#114#0" expanded="true" />
-              </folding>
+            <state>
+              <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -324,6 +231,11 @@
               <item name="School" type="b2602c69:ProjectViewProjectNode" />
               <item name="School" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="School" type="b2602c69:ProjectViewProjectNode" />
+              <item name="School" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -336,12 +248,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticAlgorithm" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib/Backpack" />
       <recent name="$PROJECT_DIR$/lib/Genetics" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/CustomAlgorithms/Heuristic/GeneticAlgorithm" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -397,7 +309,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92407000" />
+    <option name="totallyTimeSpent" value="93669000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -410,9 +322,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30664653" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31117824" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -464,7 +375,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/Macros/PARSERS.cpp" />
     <entry file="file:///usr/include/c++/8.2.1/bits/exception.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -694,13 +604,6 @@
     <entry file="file://$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="34" column="72" selection-start-line="34" selection-start-column="72" selection-end-line="34" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -752,6 +655,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Settings.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/gtest/gtest.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="114" column="31" selection-start-line="114" selection-start-column="31" selection-end-line="114" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -762,17 +689,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Settings.h">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state>
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
         </state>
       </provider>
     </entry>
