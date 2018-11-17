@@ -1,0 +1,12 @@
+//
+// Created by dzordzu on 17.11.18.
+//
+
+#ifndef SCHOOL_SCHOOLCONFIG_H
+#define SCHOOL_SCHOOLCONFIG_H
+
+// the configured options and settings for Tutorial
+#define School_VERSION_MAJOR @School_VERSION_MAJOR@
+#define School_VERSION_MINOR @School_VERSION_MINOR@
+
+#endif //SCHOOL_SCHOOLCONFIG_H

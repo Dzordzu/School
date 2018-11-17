@@ -1,17 +1,41 @@
 cmake_minimum_required(VERSION 3.12)
 project(School)
 
+# Set options for lib
 set(CMAKE_CXX_STANDARD 14)
+set(School_VERSION_MAJOR 0)
+set(School_VERSION_MINOR 1)
+
+# Add a config file
+configure_file (
+        "${PROJECT_SOURCE_DIR}/SchoolConfig.h.in"
+        "${PROJECT_BINARY_DIR}/SchoolConfig.h"
+)
+
+# Include libs
+include_directories ("${PROJECT_SOURCE_DIR}/project/InputValidator")
 
 add_executable(
-        School main.cpp project/Macros/GETSET.h
+        # Project name
+        project-genetic-knapsack
+        # Main function
+        runnable/GeneticKnapsack.cpp
+        # Included apps
+        project/KnapsackApp.cpp
+        project/KnapsackApp.h
+        # All project files
+        ## Macros
+        project/Macros/GETSET.h
+        ## Input Validator
+        project/InputValidator/InputValidator.cpp
+        project/InputValidator/InputValidator.h
+        project/InputValidator/InputValidationException.cpp
+        project/InputValidator/InputValidationException.h
+        ## Algo
         project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Implementation.cpp
         project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Implementation.h
         project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/GeneticAlgorithm.cpp
         project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/GeneticAlgorithm.h
-        project/InputValidator/InputValidator.cpp project/InputValidator/InputValidator.h
-        project/InputValidator/InputValidationException.cpp
-        project/InputValidator/InputValidationException.h
         project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Instance.cpp
         project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Instance.h
         project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Knapsack.cpp
@@ -21,10 +45,21 @@ add_executable(
         project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/WorkingSet.cpp
         project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/WorkingSet.h
         project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/RandomWrapper.h
-        project/KnapsackApp.cpp project/KnapsackApp.h
-        project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/GeneticAlgorithm.h
+)
+
+add_executable(
+        # Project name
+        project-general-genetic-algo
+        # Main function
+        runnable/GeneticAlgo.cpp
+        project/Macros/GETSET.h
+        project/InputValidator/InputValidator.cpp
+        project/InputValidator/InputValidator.h
+        project/InputValidator/InputValidationException.cpp
+        project/InputValidator/InputValidationException.h
         project/GeneralGeneticAlgorithmApp.cpp
         project/GeneralGeneticAlgorithmApp.h
+        project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/GeneticAlgorithm.h
         project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.cpp
         project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h
         project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.cpp
@@ -34,8 +69,16 @@ add_executable(
         project/RandomWrapper/RandomWrapper.cpp project/RandomWrapper/RandomWrapper.h
         project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Genotype.cpp
         project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Genotype.h
-)
+        SchoolConfig.h.in)
+
+enable_testing()
+include_directories(lib/gtest)
+
+add_executable(runUnitTests
+        test/Example.gtest.cpp
+        )
 
 add_test(
-        first_and_only_test test/Example.gtest.cpp
+        NAME runUnitTests
+        COMMAND runUnitTests
 )
