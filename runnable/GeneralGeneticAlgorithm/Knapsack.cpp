@@ -21,3 +21,8 @@ Knapsack::Knapsack(int maxWeight) {
 int Knapsack::getWeight() {
     return weight;
 }
+
+KnapsackItem::KnapsackItem(int weight, int value) {
+    this->weight = weight;
+    this->value = value;
+}

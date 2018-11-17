@@ -20,11 +20,11 @@ namespace CustomAlgorithms {
              template <typename AnalyzedType>
             struct GeneticAlgorithm {
                 GeneticAlgorithm();
-                Settings _Settings;
+                Settings settings;
                 /**
                  * Handles every instance that is in the domain of the problem
                  */
-                InstancesManager<AnalyzedType> _InstancesManager;
+                InstancesManager<AnalyzedType> instancesManager;
                 /**
                  * Runs the main task
                  */

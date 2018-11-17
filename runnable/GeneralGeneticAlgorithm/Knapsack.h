@@ -8,7 +8,7 @@
 #include <vector>
 
 struct KnapsackItem {
-    int id;
+    KnapsackItem(int weight, int value);
     int weight;
     int value;
 };
