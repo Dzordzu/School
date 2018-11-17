@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "../../project/KnapsackApp.h"
+#include "../GeneticKnapsack/KnapsackApp.h"
 
 int main() {
     return 0;
