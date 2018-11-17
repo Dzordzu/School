@@ -23,6 +23,7 @@ include_directories (
 
 add_subdirectory(project/InputValidator)
 add_subdirectory(project/RandomWrapper)
+add_subdirectory(project/GeneticKnapsack)
 
 add_executable(
         # Project name
@@ -35,25 +36,10 @@ add_executable(
         # All project files
         ## Macros
         project/Macros/GETSET.h
-        ## Input Validator
-        project/InputValidator/InputValidator.cpp
-        project/InputValidator/InputValidator.h
-        project/InputValidator/InputValidationException.cpp
-        project/InputValidator/InputValidationException.h
-        ## Algo
-        project/GeneticKnapsack/Implementation.cpp
-        project/GeneticKnapsack/Implementation.h
-        project/GeneticKnapsack/GeneticAlgorithm.cpp
-        project/GeneticKnapsack/GeneticAlgorithm.h
-        project/GeneticKnapsack/Instance.cpp
-        project/GeneticKnapsack/Instance.h
-        project/GeneticKnapsack/Knapsack.cpp
-        project/GeneticKnapsack/Knapsack.h
-        project/GeneticKnapsack/KnapsackItem.cpp
-        project/GeneticKnapsack/KnapsackItem.h
-        project/GeneticKnapsack/WorkingSet.cpp
-        project/GeneticKnapsack/WorkingSet.h
-        project/GeneticKnapsack/RandomWrapper.h
+)
+
+target_link_libraries(project-genetic-knapsack
+    GeneticKnapsack
 )
 
 add_executable(

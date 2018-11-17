@@ -1,0 +1,29 @@
+add_library(
+        GeneticKnapsack
+        ""
+)
+
+target_sources(
+        GeneticKnapsack
+        PRIVATE
+            "${CMAKE_CURRENT_LIST_DIR}/GeneticAlgorithm.h"
+            "${CMAKE_CURRENT_LIST_DIR}/Implementation.cpp"
+            "${CMAKE_CURRENT_LIST_DIR}/GeneticAlgorithm.cpp"
+            "${CMAKE_CURRENT_LIST_DIR}/GeneticAlgorithm.h"
+            "${CMAKE_CURRENT_LIST_DIR}/Instance.cpp"
+            "${CMAKE_CURRENT_LIST_DIR}/Instance.h"
+            "${CMAKE_CURRENT_LIST_DIR}/Knapsack.cpp"
+            "${CMAKE_CURRENT_LIST_DIR}/Knapsack.h"
+            "${CMAKE_CURRENT_LIST_DIR}/KnapsackItem.cpp"
+            "${CMAKE_CURRENT_LIST_DIR}/KnapsackItem.h"
+            "${CMAKE_CURRENT_LIST_DIR}/WorkingSet.cpp"
+            "${CMAKE_CURRENT_LIST_DIR}/WorkingSet.h"
+            "${CMAKE_CURRENT_LIST_DIR}/RandomWrapper.h"
+        PUBLIC
+            "${CMAKE_CURRENT_LIST_DIR}/Implementation.h"
+)
+
+target_link_libraries(GeneticKnapsack
+        RandomWrapper
+        InputValidator
+        )
