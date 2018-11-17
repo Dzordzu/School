@@ -18,16 +18,13 @@ namespace CustomAlgorithms {
              * The core of the module
              */
              template <typename AnalyzedType>
-            class GeneticAlgorithm {
-
+            struct GeneticAlgorithm {
+                GeneticAlgorithm();
+                Settings _Settings;
                 /**
                  * Handles every instance that is in the domain of the problem
                  */
-                GETref(InstancesManager<AnalyzedType>, _InstancesManager);
-                GETref(Settings, _Settings);
-
-            public:
-                GeneticAlgorithm();
+                InstancesManager<AnalyzedType> _InstancesManager;
                 /**
                  * Runs the main task
                  */

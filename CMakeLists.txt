@@ -45,7 +45,7 @@ add_executable(
         project/RandomWrapper/RandomWrapper.cpp project/RandomWrapper/RandomWrapper.h
         project/GeneticAlgorithm/Genotype.cpp
         project/GeneticAlgorithm/Genotype.h
-        SchoolConfig.h.in)
+        SchoolConfig.h.in runnable/GeneralGeneticAlgorithm/Knapsack.cpp runnable/GeneralGeneticAlgorithm/Knapsack.h)
 
 enable_testing()
 include_directories(lib/gtest)

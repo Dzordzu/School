@@ -1,7 +1,11 @@
 #include <iostream>
 
-#include "../GeneticKnapsack/KnapsackApp.h"
+#include "GeneralGeneticAlgorithmApp.h"
+#include "Knapsack.h"
 
 int main() {
+
+    Knapsack knapsack;
+
     return 0;
 }
