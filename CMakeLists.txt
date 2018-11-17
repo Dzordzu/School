@@ -4,34 +4,34 @@ project(School)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(
-        School main.cpp lib/Macros/GETSET.h
-        lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Implementation.cpp
-        lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Implementation.h
-        lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/GeneticAlgorithm.cpp
-        lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/GeneticAlgorithm.h
-        lib/InputValidator/InputValidator.cpp lib/InputValidator/InputValidator.h
-        lib/InputValidator/InputValidationException.cpp
-        lib/InputValidator/InputValidationException.h
-        lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Instance.cpp
-        lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Instance.h
-        lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Knapsack.cpp
-        lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Knapsack.h
-        lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/KnapsackItem.cpp
-        lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/KnapsackItem.h
-        lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/WorkingSet.cpp
-        lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/WorkingSet.h
-        lib/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/RandomWrapper.h
-        lib/KnapsackApp.cpp lib/KnapsackApp.h
-        lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/GeneticAlgorithm.h
-        lib/GeneralGeneticAlgorithmApp.cpp
-        lib/GeneralGeneticAlgorithmApp.h
-        lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.cpp
-        lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h
-        lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.cpp
-        lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.h
-        lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Settings.cpp
-        lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Settings.h
-        lib/RandomWrapper/RandomWrapper.cpp lib/RandomWrapper/RandomWrapper.h
-        lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Genotype.cpp
-        lib/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Genotype.h
+        School main.cpp project/Macros/GETSET.h
+        project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Implementation.cpp
+        project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Implementation.h
+        project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/GeneticAlgorithm.cpp
+        project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/GeneticAlgorithm.h
+        project/InputValidator/InputValidator.cpp project/InputValidator/InputValidator.h
+        project/InputValidator/InputValidationException.cpp
+        project/InputValidator/InputValidationException.h
+        project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Instance.cpp
+        project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Instance.h
+        project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Knapsack.cpp
+        project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Knapsack.h
+        project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/KnapsackItem.cpp
+        project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/KnapsackItem.h
+        project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/WorkingSet.cpp
+        project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/WorkingSet.h
+        project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/RandomWrapper.h
+        project/KnapsackApp.cpp project/KnapsackApp.h
+        project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/GeneticAlgorithm.h
+        project/GeneralGeneticAlgorithmApp.cpp
+        project/GeneralGeneticAlgorithmApp.h
+        project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.cpp
+        project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h
+        project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.cpp
+        project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.h
+        project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Settings.cpp
+        project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Settings.h
+        project/RandomWrapper/RandomWrapper.cpp project/RandomWrapper/RandomWrapper.h
+        project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Genotype.cpp
+        project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Genotype.h
 )

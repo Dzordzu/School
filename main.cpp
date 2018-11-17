@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "lib/KnapsackApp.h"
+#include "project/KnapsackApp.h"
 
 int main() {
     Apps::KnapsackApp();
