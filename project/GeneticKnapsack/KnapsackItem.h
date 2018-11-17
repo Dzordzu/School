@@ -8,7 +8,7 @@
 
 #include <stdint-gcc.h>
 #include <string>
-#include "../../../Macros/GETSET.h"
+#include "../Macros/GETSET.h"
 
 class KnapsackItem {
     GET(uint32_t, Value);

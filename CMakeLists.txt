@@ -32,19 +32,19 @@ add_executable(
         project/InputValidator/InputValidationException.cpp
         project/InputValidator/InputValidationException.h
         ## Algo
-        project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Implementation.cpp
-        project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Implementation.h
-        project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/GeneticAlgorithm.cpp
-        project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/GeneticAlgorithm.h
-        project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Instance.cpp
-        project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Instance.h
-        project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Knapsack.cpp
-        project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/Knapsack.h
-        project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/KnapsackItem.cpp
-        project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/KnapsackItem.h
-        project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/WorkingSet.cpp
-        project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/WorkingSet.h
-        project/CustomAlgorithms/MetaHeuristic/GeneticKnapsack/RandomWrapper.h
+        project/GeneticKnapsack/Implementation.cpp
+        project/GeneticKnapsack/Implementation.h
+        project/GeneticKnapsack/GeneticAlgorithm.cpp
+        project/GeneticKnapsack/GeneticAlgorithm.h
+        project/GeneticKnapsack/Instance.cpp
+        project/GeneticKnapsack/Instance.h
+        project/GeneticKnapsack/Knapsack.cpp
+        project/GeneticKnapsack/Knapsack.h
+        project/GeneticKnapsack/KnapsackItem.cpp
+        project/GeneticKnapsack/KnapsackItem.h
+        project/GeneticKnapsack/WorkingSet.cpp
+        project/GeneticKnapsack/WorkingSet.h
+        project/GeneticKnapsack/RandomWrapper.h
 )
 
 add_executable(
@@ -59,16 +59,16 @@ add_executable(
         project/InputValidator/InputValidationException.h
         project/GeneralGeneticAlgorithmApp.cpp
         project/GeneralGeneticAlgorithmApp.h
-        project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/GeneticAlgorithm.h
-        project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.cpp
-        project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Instances.h
-        project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.cpp
-        project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Individual.h
-        project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Settings.cpp
-        project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Settings.h
+        project/GeneticAlgorithm/GeneticAlgorithm.h
+        project/GeneticAlgorithm/Instances.cpp
+        project/GeneticAlgorithm/Instances.h
+        project/GeneticAlgorithm/Individual.cpp
+        project/GeneticAlgorithm/Individual.h
+        project/GeneticAlgorithm/Settings.cpp
+        project/GeneticAlgorithm/Settings.h
         project/RandomWrapper/RandomWrapper.cpp project/RandomWrapper/RandomWrapper.h
-        project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Genotype.cpp
-        project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Genotype.h
+        project/GeneticAlgorithm/Genotype.cpp
+        project/GeneticAlgorithm/Genotype.h
         SchoolConfig.h.in)
 
 enable_testing()

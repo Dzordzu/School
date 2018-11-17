@@ -7,7 +7,7 @@
 
 
 #include <cstdint>
-#include "../../../Macros/GETSET.h"
+#include "../Macros/GETSET.h"
 
 class Knapsack {
     GET(uint32_t, Size);

@@ -6,7 +6,7 @@
 #define SCHOOL_INSTANCES_H
 
 #include <vector>
-#include "../../../Macros/GETSET.h"
+#include "../Macros/GETSET.h"
 
 namespace CustomAlgorithms {
     namespace MetaHeuristics {

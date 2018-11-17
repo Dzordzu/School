@@ -5,7 +5,7 @@
 #ifndef SCHOOL_SETTINGS_H
 #define SCHOOL_SETTINGS_H
 
-#include "../../../Macros/GETSET.h"
+#include "../Macros/GETSET.h"
 #include <cstdint>
 
 namespace CustomAlgorithms {

@@ -5,7 +5,7 @@
 #ifndef SCHOOL_GENETICALGORITHM_H
 #define SCHOOL_GENETICALGORITHM_H
 
-#include "../../../Macros/GETSET.h"
+#include "../Macros/GETSET.h"
 #include "Instances.h"
 #include "Settings.h"
 #include <vector>

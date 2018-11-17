@@ -6,7 +6,7 @@
 #define SCHOOL_GENETICALGORITHM_H
 
 #include <cstdint>
-#include "../../../Macros/GETSET.h"
+#include "../Macros/GETSET.h"
 #include "Knapsack.h"
 #include "WorkingSet.h"
 #include "Instance.h"

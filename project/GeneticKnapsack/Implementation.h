@@ -14,7 +14,7 @@ public: \
     }
 #endif //STRING_TO_STREAM
 
-#include "../../../InputValidator/InputValidator.h"
+#include "InputValidator.h"
 #include "GeneticAlgorithm.h"
 #include "WorkingSet.h"
 #include "Knapsack.h"
