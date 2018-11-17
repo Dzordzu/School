@@ -1,4 +1,4 @@
-# cmake_minimum_required(VERSION <specify CMake version here>)
+cmake_minimum_required(VERSION 3.12)
 project(School)
 
 set(CMAKE_CXX_STANDARD 14)
@@ -34,4 +34,8 @@ add_executable(
         project/RandomWrapper/RandomWrapper.cpp project/RandomWrapper/RandomWrapper.h
         project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Genotype.cpp
         project/CustomAlgorithms/MetaHeuristic/GeneticAlgorithm/Genotype.h
+)
+
+add_test(
+        first_and_only_test test/Example.gtest.cpp
 )
