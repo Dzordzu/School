@@ -19,7 +19,7 @@ add_executable(
         # Project name
         project-genetic-knapsack
         # Main function
-        runnable/GeneticKnapsack.cpp
+        runnable/GeneticKnapsack/GeneticKnapsack.cpp
         # Included apps
         project/KnapsackApp.cpp
         project/KnapsackApp.h
@@ -51,7 +51,7 @@ add_executable(
         # Project name
         project-general-genetic-algo
         # Main function
-        runnable/GeneticAlgo.cpp
+        runnable/GeneralGeneticAlgorithm/GeneticAlgo.cpp
         project/Macros/GETSET.h
         project/InputValidator/InputValidator.cpp
         project/InputValidator/InputValidator.h
