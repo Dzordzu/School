@@ -15,20 +15,27 @@ int main() {
         KnapsackItem(5, 9),
         KnapsackItem(45, 8)
     };
+    CMG::GeneticAlgorithm<
+            /* Considered elements type */  KnapsackItem,
+            /* Returned value type*/        Knapsack
+            > GA;
 
-    CMG::GeneticAlgorithm<KnapsackItem, Knapsack> GA;
-
-    GA.settings.stopCondition = CMG::StopCondition(
-            CMG::StopCondition::Type::ITERATION,
-            100
+    CMG::StopCondition stopCondition(
+            /* Type */  CMG::StopCondition::Type::ITERATION
+            /* Value */ 100
             );
+
+    GA.settings.stopCondition = stopCondition;
     GA.settings.populationSize = 20;
     GA.settings.mutationProbability = 0.1;
     GA.settings.crossingProbability = 0.5;
 
-    ExampleInstanceFitnessCalculator<KnapsackItem> instanceFitnessCalculator;
-    ExampleIndividualFitnessCalculator<KnapsackItem> individualFitnessCalculator;
-    ExampleResultFormatter<KnapsackItem, Knapsack> resultFormatter;
+    ExampleInstanceFitnessCalculator</* Considered elements type*/ KnapsackItem> instanceFitnessCalculator;
+    ExampleIndividualFitnessCalculator</* Considered elements type*/ KnapsackItem> individualFitnessCalculator;
+    ExampleResultFormatter <
+        /* Considered elements type */  KnapsackItem,
+        /* Returned value type*/        Knapsack
+        > resultFormatter;
 
     GA.settings.instanceFitnessCalculator(instanceFitnessCalculator);
     GA.settings.individualFitnessCalculator(individualFitnessCalculator);
