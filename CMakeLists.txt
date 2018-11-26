@@ -15,14 +15,14 @@ configure_file (
 # Include libs
 include_directories (
         "${PROJECT_SOURCE_DIR}/project/InputValidator"
+        "${PROJECT_SOURCE_DIR}/project/RandomWrapper"
         "${PROJECT_SOURCE_DIR}/project/GeneticAlgorithm"
 )
 
 # add_subdirectory()
-add_subdirectory(
-        project/InputValidator
-        project/GeneticAlgorithm
-)
+add_subdirectory(project/InputValidator)
+add_subdirectory(project/GeneticAlgorithm)
+add_subdirectory(project/RandomWrapper)
 
 # GeneticAlgorithm
 
