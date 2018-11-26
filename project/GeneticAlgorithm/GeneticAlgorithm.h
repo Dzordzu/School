@@ -9,6 +9,7 @@
 #include <cstdint>
 #include <vector>
 #include "StopCondition.h"
+#include "Unit.h"
 
 class GeneticAlgorithm {
 public:
