@@ -29,7 +29,7 @@ public:
 public:
     Type getType();
     bool isFulfilled(Fitness &other);
-    bool isFulfilled(uint32_t);
+    bool isFulfilled(uint32_t &other);
 };
 
 
