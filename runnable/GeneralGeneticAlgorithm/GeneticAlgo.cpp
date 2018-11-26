@@ -1,11 +1,8 @@
 #include <iostream>
-
-#include "GeneralGeneticAlgorithmApp.h"
+#include <project/GeneticAlgorithm/StopCondition.h>
 #include "Knapsack.h"
 
 int main() {
-
-#define CMG CustomAlgorithms::MetaHeuristics::GeneticAlgorithm;
 
     Knapsack knapsack;
     std::vector<KnapsackItem> items {
@@ -15,43 +12,24 @@ int main() {
         KnapsackItem(5, 9),
         KnapsackItem(45, 8)
     };
-    CMG::GeneticAlgorithm<
-            /* Considered elements type */  KnapsackItem,
-            /* Returned value type*/        Knapsack
-            > GA;
 
-    CMG::StopCondition stopCondition(
-            /* Type */  CMG::StopCondition::Type::ITERATION
-            /* Value */ 100
-            );
+    GeneticAlgorithm GA<KnapsackItem>;
 
-    GA.settings.stopCondition = stopCondition;
-    GA.settings.populationSize = 20;
-    GA.settings.mutationProbability = 0.1;
-    GA.settings.crossingProbability = 0.5;
+    StopCondition condition(StopCondition::Type::ITERATION, 100);
 
-    ExampleInstanceFitnessCalculator</* Considered elements type*/ KnapsackItem> instanceFitnessCalculator;
-    ExampleIndividualFitnessCalculator</* Considered elements type*/ KnapsackItem> individualFitnessCalculator;
-    ExampleResultFormatter <
-        /* Considered elements type */  KnapsackItem,
-        /* Returned value type*/        Knapsack
-        > resultFormatter;
+    GA.setStopCondition(condition);
+    GA.setMutationProbability = 0.1;
+    GA.setCrossingProbability = 0.5;
 
-    GA.settings.instanceFitnessCalculator(instanceFitnessCalculator);
-    GA.settings.individualFitnessCalculator(individualFitnessCalculator);
-    GA.settings.resultFormatter(resultFormatter);
-    GA.settings.storage = CMG::Storage::POINTERS;
+    GA.items = items;
+    GA.fitnessCalculator = [](std::vector<Fitness> values) -> Fitness {
+        Fitness result;
 
-    GA.instanceManager.open()
-
-    for(KnapsackItem i : items)
-        GA.instanceManager.addInstance(&i);
-
-    GA.instanceManager.close();
+        return
+    };
 
     GA.init();
-    Knapsack result = GA.getResult();
-
+    std::vector<KnapsackItem> result = GA.result();
 
 
     return 0;

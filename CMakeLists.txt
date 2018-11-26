@@ -18,14 +18,17 @@ include_directories (
 )
 
 # add_subdirectory()
-# add_executable()
+add_executable(
+        GA
+        "${PROJECT_SOURCE_DIR}/runnable/GeneralGeneticAlgorithm/GeneticAlgo.cpp"
+)
 
 enable_testing()
 include_directories(lib/gtest)
 
 add_executable(runUnitTests
         test/Example.gtest.cpp
-        )
+        project/GeneticAlgorithm/GeneticAlgorithm.cpp project/GeneticAlgorithm/GeneticAlgorithm.h project/GeneticAlgorithm/Problem.cpp project/GeneticAlgorithm/Problem.h project/GeneticAlgorithm/Instance.cpp project/GeneticAlgorithm/Instance.h project/GeneticAlgorithm/StopCondition.cpp project/GeneticAlgorithm/StopCondition.h)
 
 add_test(
         NAME runUnitTests
