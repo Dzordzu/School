@@ -9,8 +9,9 @@ add_library(GeneticAlgorithm
         StopCondition.cpp
         Fitness.h
         Fitness.cpp
-
-)
+        Unit.cpp
+        Unit.h
+        )
 
 #target_link_libraries(GeneticAlgorithm
 #        InputValidator
