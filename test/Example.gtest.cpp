@@ -2,17 +2,20 @@
 // Created by dzordzu on 17.11.18.
 //
 
-#include "../lib/gtest/gtest.h"
+#include <gtest/gtest.h>
 
-TEST(SquareRootTest, PositiveNos) {
-    EXPECT_EQ (18.0, 18.0);
-    EXPECT_EQ (13.0, 13.0);
-    EXPECT_EQ (18.3, 18.3);
-}
+namespace {
 
-TEST (SquareRootTest, ZeroAndNegativeNos) {
-    ASSERT_EQ (0.0, 0.1);
-    ASSERT_EQ (-1, -22.0);
+    TEST(SquareRootTest, PositiveNos) {
+        EXPECT_EQ (18.0, 18.0);
+        EXPECT_EQ (13.0, 13.0);
+        EXPECT_EQ (18.3, 18.3);
+    }
+
+    TEST(SquareRootTest, ZeroAndNegativeNos) {
+        ASSERT_EQ (0.0, 0.1);
+        ASSERT_EQ (-1, -22.0);
+    }
 }
 
 int main(int argc, char **argv) {

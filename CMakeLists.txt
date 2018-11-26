@@ -13,6 +13,10 @@ configure_file (
 )
 
 # Include libs
+include_directories(lib/googletest-release-1.8.1)
+add_subdirectory(lib/googletest-release-1.8.1)
+enable_testing()
+
 include_directories (
         "${PROJECT_SOURCE_DIR}/project/InputValidator"
         "${PROJECT_SOURCE_DIR}/project/RandomWrapper"
@@ -24,8 +28,9 @@ add_subdirectory(project/InputValidator)
 add_subdirectory(project/GeneticAlgorithm)
 add_subdirectory(project/RandomWrapper)
 
-# GeneticAlgorithm
-
+########################
+# GeneticAlgorithm App #
+########################
 add_executable(
         GA
         "${PROJECT_SOURCE_DIR}/runnable/GeneralGeneticAlgorithm/GeneticAlgo.cpp"
@@ -35,13 +40,12 @@ target_link_libraries(
         GeneticAlgorithm
 )
 
-enable_testing()
-include_directories(lib/gtest)
-
 add_executable(runUnitTests
         test/Example.gtest.cpp
-        project/GeneticAlgorithm/GeneticAlgorithm.cpp project/GeneticAlgorithm/GeneticAlgorithm.h project/GeneticAlgorithm/Problem.cpp project/GeneticAlgorithm/Problem.h project/GeneticAlgorithm/Instance.cpp project/GeneticAlgorithm/Instance.h project/GeneticAlgorithm/StopCondition.cpp project/GeneticAlgorithm/StopCondition.h)
-
+        )
+target_link_libraries(runUnitTests
+        gtest
+)
 add_test(
         NAME runUnitTests
         COMMAND runUnitTests

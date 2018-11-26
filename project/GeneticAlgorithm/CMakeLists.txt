@@ -13,6 +13,18 @@ add_library(GeneticAlgorithm
         Unit.h
         )
 
-#target_link_libraries(GeneticAlgorithm
-#        InputValidator
-#)
+target_link_libraries(GeneticAlgorithm
+        InputValidator
+)
+
+#######################################
+# Tests
+#######################################
+add_executable(GeneticAlgorithmTest
+        Test/Test.cpp
+)
+
+target_link_libraries(GeneticAlgorithmTest
+        gtest
+        GeneticAlgorithm
+)
