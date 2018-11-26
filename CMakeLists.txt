@@ -24,11 +24,12 @@ add_subdirectory(
         project/GeneticAlgorithm
 )
 
+# GeneticAlgorithm
+
 add_executable(
         GA
         "${PROJECT_SOURCE_DIR}/runnable/GeneralGeneticAlgorithm/GeneticAlgo.cpp"
 )
-
 target_link_libraries(
         GA
         GeneticAlgorithm

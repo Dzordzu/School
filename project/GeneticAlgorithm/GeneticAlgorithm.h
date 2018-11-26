@@ -7,17 +7,16 @@
 
 
 #include <cstdint>
+#include <vector>
 #include "StopCondition.h"
 
 class GeneticAlgorithm {
-
-
 public:
     void init();
-    void setMutationProbability();
-    void setCrossingProbability();
-    void setGenes();
-    void setStopCondition();
+    void setMutationProbability(float probability);
+    void setCrossingProbability(float probability);
+    void setGenes(std::vector<Unit> genes);
+    void setStopCondition(StopCondition stopCondition);
 };
 
 

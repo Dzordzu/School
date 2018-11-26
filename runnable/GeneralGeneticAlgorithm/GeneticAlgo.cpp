@@ -18,8 +18,8 @@ int main() {
     StopCondition condition(StopCondition::Type::ITERATION, 100);
 
     GA.setStopCondition(condition);
-    GA.setMutationProbability = 0.1;
-    GA.setCrossingProbability = 0.5;
+    GA.setMutationProbability(0.1);
+    GA.setCrossingProbability(0.5);
 
     GA.items = items;
     GA.fitnessCalculator = [](std::vector<Fitness> values) -> Fitness {
