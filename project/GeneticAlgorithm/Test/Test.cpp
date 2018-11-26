@@ -22,11 +22,11 @@ namespace {
 
     TEST(FitnessTest, NonOverloaded) {
         FitnessNonOverloaded f1, f2;
-//        EXPECT_THROW(f1 == f2, FitnessException);
-//        EXPECT_THROW(f1 <= f2, FitnessException);
-//        EXPECT_THROW(f1 >= f2, FitnessException);
-//        EXPECT_THROW(f1 < f2, FitnessException);
-//        EXPECT_THROW(f1 > f2, FitnessException);
+        EXPECT_THROW(f1 == f2, FitnessException);
+        EXPECT_THROW(f1 <= f2, FitnessException);
+        EXPECT_THROW(f1 >= f2, FitnessException);
+        EXPECT_THROW(f1 < f2, FitnessException);
+        EXPECT_THROW(f1 > f2, FitnessException);
     }
 
     TEST(FitnessTest, Overloaded) {
