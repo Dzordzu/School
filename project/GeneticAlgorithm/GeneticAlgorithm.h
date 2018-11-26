@@ -7,6 +7,7 @@
 
 
 #include <cstdint>
+#include "StopCondition.h"
 
 class GeneticAlgorithm {
 

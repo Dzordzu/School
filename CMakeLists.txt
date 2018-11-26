@@ -14,13 +14,24 @@ configure_file (
 
 # Include libs
 include_directories (
-        "${PROJECT_SOURCE_DIR}"
+        "${PROJECT_SOURCE_DIR}/project/InputValidator"
+        "${PROJECT_SOURCE_DIR}/project/GeneticAlgorithm"
 )
 
 # add_subdirectory()
+add_subdirectory(
+        project/InputValidator
+        project/GeneticAlgorithm
+)
+
 add_executable(
         GA
         "${PROJECT_SOURCE_DIR}/runnable/GeneralGeneticAlgorithm/GeneticAlgo.cpp"
+)
+
+target_link_libraries(
+        GA
+        GeneticAlgorithm
 )
 
 enable_testing()

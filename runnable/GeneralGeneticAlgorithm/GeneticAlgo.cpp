@@ -1,5 +1,5 @@
 #include <iostream>
-#include <project/GeneticAlgorithm/StopCondition.h>
+#include <GeneticAlgorithm.h>
 #include "Knapsack.h"
 
 int main() {
