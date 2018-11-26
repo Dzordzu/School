@@ -6,8 +6,13 @@
 #define SCHOOL_UNIT_H
 
 
-class Unit {
+#include "Fitness.h"
 
+class Unit {
+protected:
+    Fitness unitFitness;
+public:
+    virtual Fitness getUnitFitness() = 0;
 };
 
 
