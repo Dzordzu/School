@@ -7,6 +7,8 @@ add_library(GeneticAlgorithm
         Problem.cpp
         StopCondition.h
         StopCondition.cpp
+        Fitness.h
+        Fitness.cpp
 
 )
 
