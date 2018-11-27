@@ -23,7 +23,7 @@ int main() {
     GA.setGenes(genes);
 
     GA.init();
-    Unit result = GA.getResult();
+    Unit result = GA.getResult(); //TODO: FIX
 
 
     return 0;

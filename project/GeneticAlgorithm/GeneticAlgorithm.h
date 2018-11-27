@@ -18,7 +18,7 @@ public:
     void setCrossingProbability(float probability);
     void setGenes(const std::vector<Unit*> &genes);
     void setStopCondition(StopCondition stopCondition);
-    Unit getResult();
+    Unit getResult(); // TODO: FIX THIS - IT CANNOT BE A UNIT (GENE)
 };
 
 
