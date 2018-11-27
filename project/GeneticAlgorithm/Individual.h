@@ -11,9 +11,9 @@
 class Individual {
     Fitness fitness;
 public:
-    virtual void crossWith(Individual &i);
-    virtual void mutate();
-    virtual void getFitness();
+    virtual void crossWith(Individual &i) = 0;
+    virtual void mutate() = 0;
+    virtual Fitness getFitness();
 };
 
 

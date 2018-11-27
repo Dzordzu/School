@@ -3,3 +3,7 @@
 //
 
 #include "Individual.h"
+
+Fitness Individual::getFitness() {
+    return this->fitness;
+}
