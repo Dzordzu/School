@@ -25,6 +25,7 @@ int Knapsack::getWeight() {
 KnapsackItem::KnapsackItem(int weight, int value) {
     this->weight = weight;
     this->value = value;
+    this->unitFitness = new KnapsackFitness(weight);
 }
 
 Fitness * KnapsackItem::getUnitFitness() {

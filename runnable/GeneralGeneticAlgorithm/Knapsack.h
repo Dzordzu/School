@@ -10,10 +10,12 @@
 
 class KnapsackFitness : public Fitness {
     int value;
+    int weight;
 
 public:
-    explicit KnapsackFitness(int value) {
-        this->value = value;
+    explicit KnapsackFitness(int value, int weight) {
+        this->weight = weight;
+        this->value = weight < 20 ? value : 0;
     }
 
     bool operator==(const KnapsackFitness &f) { return this->value == f.value; }
