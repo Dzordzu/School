@@ -19,7 +19,6 @@ int main() {
     GA.setStopCondition(condition);
     GA.setMutationProbability(0.1);
     GA.setCrossingProbability(0.5);
-
     GA.setGenes(genes);
 
     GA.init();

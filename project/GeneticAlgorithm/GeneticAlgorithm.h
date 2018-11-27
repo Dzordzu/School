@@ -18,6 +18,7 @@ public:
     void setMutationProbability(float probability);
     void setCrossingProbability(float probability);
     void setGenes(const std::vector<Gene*> &genes);
+    std::vector<Gene *> *getGenes();
     void setStopCondition(StopCondition stopCondition);
     Individual * getResult();
 };
