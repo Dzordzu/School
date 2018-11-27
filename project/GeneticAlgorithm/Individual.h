@@ -6,7 +6,7 @@
 #define SCHOOL_INDIVIDUAL_H
 
 
-class Instance {
+class Individual {
 
 };
 
