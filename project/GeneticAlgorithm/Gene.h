@@ -8,7 +8,7 @@
 
 #include "Fitness.h"
 
-class Unit {
+class Gene {
 protected:
     Fitness unitFitness;
 public:

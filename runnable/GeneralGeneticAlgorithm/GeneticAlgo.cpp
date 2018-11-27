@@ -6,7 +6,7 @@ int main() {
 
     Knapsack knapsack;
     std::vector<KnapsackItem> items;
-    std::vector<Unit *> genes;
+    std::vector<Gene *> genes;
 
     for(KnapsackItem &i : items) {
         genes.push_back(&i);
@@ -23,7 +23,7 @@ int main() {
     GA.setGenes(genes);
 
     GA.init();
-    Unit result = GA.getResult(); //TODO: FIX
+    Gene result = GA.getResult(); //TODO: FIX
 
 
     return 0;

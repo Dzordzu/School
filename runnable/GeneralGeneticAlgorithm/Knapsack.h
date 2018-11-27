@@ -6,9 +6,9 @@
 #define SCHOOL_KNAPSACK_H
 
 #include <vector>
-#include "Unit.h"
+#include "Gene.h"
 
-class KnapsackItem : public Unit {
+class KnapsackItem : public Gene {
     int weight;
     int value;
     friend class Knapsack;

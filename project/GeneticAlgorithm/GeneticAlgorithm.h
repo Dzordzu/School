@@ -9,16 +9,16 @@
 #include <cstdint>
 #include <vector>
 #include "StopCondition.h"
-#include "Unit.h"
+#include "Gene.h"
 
 class GeneticAlgorithm {
 public:
     void init();
     void setMutationProbability(float probability);
     void setCrossingProbability(float probability);
-    void setGenes(const std::vector<Unit*> &genes);
+    void setGenes(const std::vector<Gene*> &genes);
     void setStopCondition(StopCondition stopCondition);
-    Unit getResult(); // TODO: FIX THIS - IT CANNOT BE A UNIT (GENE)
+    Gene getResult(); // TODO: FIX THIS - IT CANNOT BE A UNIT (GENE)
 };
 
 
