@@ -11,6 +11,7 @@
 class KnapsackItem : public Unit {
     int weight;
     int value;
+    friend class Knapsack;
 public:
     KnapsackItem(int weight, int value);
     Fitness getUnitFitness();

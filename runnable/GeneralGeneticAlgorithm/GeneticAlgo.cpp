@@ -5,13 +5,12 @@
 int main() {
 
     Knapsack knapsack;
-    std::vector<KnapsackItem> items {
-        KnapsackItem(10, 5),
-        KnapsackItem(5, 100),
-        KnapsackItem(3, 10),
-        KnapsackItem(5, 9),
-        KnapsackItem(45, 8)
-    };
+    std::vector<KnapsackItem> items;
+    std::vector<Unit *> genes;
+
+    for(KnapsackItem &i : items) {
+        genes.push_back(&i);
+    }
 
     GeneticAlgorithm GA;
 
@@ -21,15 +20,10 @@ int main() {
     GA.setMutationProbability(0.1);
     GA.setCrossingProbability(0.5);
 
-    GA.setGenes();
-    GA.fitnessCalculator = [](std::vector<Fitness> values) -> Fitness {
-        Fitness result;
-
-        return
-    };
+    GA.setGenes(genes);
 
     GA.init();
-    std::vector<KnapsackItem> result = GA.result();
+    Unit result = GA.getResult();
 
 
     return 0;

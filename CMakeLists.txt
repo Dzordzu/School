@@ -34,6 +34,8 @@ add_subdirectory(project/RandomWrapper)
 add_executable(
         GA
         "${PROJECT_SOURCE_DIR}/runnable/GeneralGeneticAlgorithm/GeneticAlgo.cpp"
+        "${PROJECT_SOURCE_DIR}/runnable/GeneralGeneticAlgorithm/Knapsack.h"
+        "${PROJECT_SOURCE_DIR}/runnable/GeneralGeneticAlgorithm/Knapsack.cpp"
 )
 target_link_libraries(
         GA
