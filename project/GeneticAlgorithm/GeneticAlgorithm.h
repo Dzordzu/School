@@ -13,14 +13,19 @@
 #include "Individual.h"
 
 class GeneticAlgorithm {
+    float mutationProbability;
+    float crossingProbability;
+    std::vector<Gene *> genes;
+    StopCondition stopCondition;
+
 public:
-    void init();
     void setMutationProbability(float probability);
     void setCrossingProbability(float probability);
     void setGenes(const std::vector<Gene*> &genes);
-    std::vector<Gene *> *getGenes();
+    std::vector<Gene *> getGenes();
     void setStopCondition(StopCondition stopCondition);
     Individual * getResult();
+    void init();
 };
 
 
