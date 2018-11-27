@@ -29,7 +29,7 @@ class KnapsackItem : public Gene {
     friend class Knapsack;
 public:
     KnapsackItem(int weight, int value);
-    Fitness getUnitFitness() override;
+    Fitness * getUnitFitness() override;
 };
 
 class Knapsack {
@@ -45,9 +45,6 @@ public:
     int getWeight();
 };
 
-Fitness * KnapsackItem::getUnitFitness() {
-    return new KnapsackFitness();
-}
 
 
 #endif //SCHOOL_KNAPSACK_H

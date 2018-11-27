@@ -26,3 +26,7 @@ KnapsackItem::KnapsackItem(int weight, int value) {
     this->weight = weight;
     this->value = value;
 }
+
+Fitness * KnapsackItem::getUnitFitness() {
+    return this->unitFitness;
+}
