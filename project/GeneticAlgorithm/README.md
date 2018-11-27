@@ -8,6 +8,7 @@
 ## Issues
 
 ### TODO
+1. Think about generateRandomPopulation()
 
 ### Won't fix
 1. Fitness forces to overload most comparisons operators
