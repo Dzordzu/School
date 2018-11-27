@@ -14,8 +14,8 @@ class Fitness;
 class FitnessException : std::exception {
     std::string message;
 public:
-    FitnessException(Fitness *type) {}
-    const char* what() const noexcept {}
+    explicit FitnessException(Fitness *type);
+    const char* what() const noexcept override;
 };
 
 
