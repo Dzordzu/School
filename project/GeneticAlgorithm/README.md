@@ -5,4 +5,9 @@
 2. Create class that inherits Gene abstract (previously Unit)
 3. Create class that inherits Individual
 
-## TODO Issues
+## Issues
+
+### TODO
+
+### Won't fix
+1. Fitness forces to overload most comparisons operators
