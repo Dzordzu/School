@@ -1,6 +1,54 @@
-# cmake_minimum_required(VERSION <specify CMake version here>)
+cmake_minimum_required(VERSION 3.12)
 project(School)
 
+# Set options for lib
 set(CMAKE_CXX_STANDARD 14)
+set(School_VERSION_MAJOR 1)
+set(School_VERSION_MINOR 0)
 
-add_executable(School main.cpp lib/Macros/GETSET.h lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Implementation.cpp lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Implementation.h lib/CustomAlgorithms/Heuristic/GeneticKnapsack/GeneticAlgorithm.cpp lib/CustomAlgorithms/Heuristic/GeneticKnapsack/GeneticAlgorithm.h lib/InputValidator/InputValidator.cpp lib/InputValidator/InputValidator.h lib/InputValidator/InputValidationException.cpp lib/InputValidator/InputValidationException.h lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Instance.cpp lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Instance.h lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Knapsack.cpp lib/CustomAlgorithms/Heuristic/GeneticKnapsack/Knapsack.h lib/CustomAlgorithms/Heuristic/GeneticKnapsack/KnapsackItem.cpp lib/CustomAlgorithms/Heuristic/GeneticKnapsack/KnapsackItem.h lib/CustomAlgorithms/Heuristic/GeneticKnapsack/WorkingSet.cpp lib/CustomAlgorithms/Heuristic/GeneticKnapsack/WorkingSet.h lib/CustomAlgorithms/Heuristic/GeneticKnapsack/RandomWrapper.h lib/KnapsackApp.cpp lib/KnapsackApp.h)
+# Add a config file
+configure_file (
+        "${PROJECT_SOURCE_DIR}/SchoolConfig.h.in"
+        "${PROJECT_BINARY_DIR}/SchoolConfig.h"
+)
+
+# Include libs
+include_directories(lib/googletest-release-1.8.1)
+add_subdirectory(lib/googletest-release-1.8.1)
+enable_testing()
+
+include_directories (
+        "${PROJECT_SOURCE_DIR}/project/InputValidator"
+        "${PROJECT_SOURCE_DIR}/project/RandomWrapper"
+        "${PROJECT_SOURCE_DIR}/project/GeneticAlgorithm"
+)
+
+# add_subdirectory()
+add_subdirectory(project/InputValidator)
+add_subdirectory(project/GeneticAlgorithm)
+add_subdirectory(project/RandomWrapper)
+
+########################
+# GeneticAlgorithm App #
+########################
+add_executable(
+        GA
+        "${PROJECT_SOURCE_DIR}/runnable/GeneralGeneticAlgorithm/GeneticAlgo.cpp"
+        "${PROJECT_SOURCE_DIR}/runnable/GeneralGeneticAlgorithm/Knapsack.h"
+        "${PROJECT_SOURCE_DIR}/runnable/GeneralGeneticAlgorithm/Knapsack.cpp"
+)
+target_link_libraries(
+        GA
+        GeneticAlgorithm
+)
+
+add_executable(runUnitTests
+        test/Example.gtest.cpp
+        )
+target_link_libraries(runUnitTests
+        gtest
+)
+add_test(
+        NAME runUnitTests
+        COMMAND runUnitTests
+)
