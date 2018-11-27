@@ -13,7 +13,7 @@ class KnapsackFitness : public Fitness {
     int weight;
 
 public:
-    explicit KnapsackFitness(int value, int weight) {
+    explicit KnapsackFitness(int weight, int value) {
         this->weight = weight;
         this->value = weight < 20 ? value : 0;
     }
