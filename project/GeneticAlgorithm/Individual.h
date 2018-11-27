@@ -6,8 +6,14 @@
 #define SCHOOL_INDIVIDUAL_H
 
 
-class Individual {
+#include "Fitness.h"
 
+class Individual {
+    Fitness fitness;
+public:
+    virtual void crossWith(Individual &i);
+    virtual void mutate();
+    virtual void getFitness();
 };
 
 
