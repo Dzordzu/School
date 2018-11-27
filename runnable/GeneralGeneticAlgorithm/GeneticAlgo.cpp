@@ -13,7 +13,7 @@ int main() {
         KnapsackItem(45, 8)
     };
 
-    GeneticAlgorithm GA<KnapsackItem>;
+    GeneticAlgorithm GA;
 
     StopCondition condition(StopCondition::Type::ITERATION, 100);
 
@@ -21,7 +21,7 @@ int main() {
     GA.setMutationProbability(0.1);
     GA.setCrossingProbability(0.5);
 
-    GA.items = items;
+    GA.setGenes();
     GA.fitnessCalculator = [](std::vector<Fitness> values) -> Fitness {
         Fitness result;
 

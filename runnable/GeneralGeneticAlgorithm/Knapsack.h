@@ -6,11 +6,14 @@
 #define SCHOOL_KNAPSACK_H
 
 #include <vector>
+#include "Unit.h"
 
-struct KnapsackItem {
-    KnapsackItem(int weight, int value);
+class KnapsackItem : public Unit {
     int weight;
     int value;
+public:
+    KnapsackItem(int weight, int value);
+    Fitness getUnitFitness();
 };
 
 class Knapsack {
