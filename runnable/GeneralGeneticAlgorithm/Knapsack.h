@@ -8,6 +8,9 @@
 #include <vector>
 #include "Gene.h"
 
+/**
+ * Our fitness class
+ */
 class KnapsackFitness : public Fitness {
     int value;
     int weight;
@@ -25,6 +28,9 @@ public:
     bool operator<=(const KnapsackFitness &f) { return *this<f || *this == f; }
 };
 
+/**
+ * Knapsack Items will be our genes
+ */
 class KnapsackItem : public Gene {
     int weight;
     int value;
@@ -34,6 +40,9 @@ public:
     Fitness * getUnitFitness() override;
 };
 
+/**
+ * This will be our result
+ */
 class Knapsack {
     int value;
     int weight;
