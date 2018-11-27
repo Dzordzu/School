@@ -8,13 +8,28 @@
 #include <vector>
 #include "Gene.h"
 
+class KnapsackFitness : public Fitness {
+    int value;
+
+public:
+    explicit KnapsackFitness(int value) {
+        this->value = value;
+    }
+
+    bool operator==(const KnapsackFitness &f) { return this->value == f.value; }
+    bool operator>(const KnapsackFitness &f) { return this->value > f.value; }
+    bool operator<(const KnapsackFitness &f) { return this->value < f.value; }
+    bool operator>=(const KnapsackFitness &f) { return *this>f || *this == f; }
+    bool operator<=(const KnapsackFitness &f) { return *this<f || *this == f; }
+};
+
 class KnapsackItem : public Gene {
     int weight;
     int value;
     friend class Knapsack;
 public:
     KnapsackItem(int weight, int value);
-    Fitness getUnitFitness();
+    Fitness getUnitFitness() override;
 };
 
 class Knapsack {
@@ -29,6 +44,10 @@ public:
     int getValue();
     int getWeight();
 };
+
+Fitness * KnapsackItem::getUnitFitness() {
+    return new KnapsackFitness();
+}
 
 
 #endif //SCHOOL_KNAPSACK_H

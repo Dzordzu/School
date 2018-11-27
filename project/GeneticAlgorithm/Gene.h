@@ -10,9 +10,9 @@
 
 class Gene {
 protected:
-    Fitness unitFitness;
+    Fitness * unitFitness;
 public:
-    virtual Fitness getUnitFitness() = 0;
+    virtual Fitness * getUnitFitness() = 0;
 };
 
 
