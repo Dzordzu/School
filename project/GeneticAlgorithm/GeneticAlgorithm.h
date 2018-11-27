@@ -10,6 +10,7 @@
 #include <vector>
 #include "StopCondition.h"
 #include "Gene.h"
+#include "Individual.h"
 
 class GeneticAlgorithm {
 public:
@@ -18,7 +19,7 @@ public:
     void setCrossingProbability(float probability);
     void setGenes(const std::vector<Gene*> &genes);
     void setStopCondition(StopCondition stopCondition);
-    Gene getResult(); // TODO: FIX THIS - IT CANNOT BE A UNIT (GENE)
+    Individual * getResult();
 };
 
 
