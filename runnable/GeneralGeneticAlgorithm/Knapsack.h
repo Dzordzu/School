@@ -6,6 +6,7 @@
 #define SCHOOL_KNAPSACK_H
 
 #include <vector>
+#include <Individual.h>
 #include "Gene.h"
 
 /**
@@ -41,9 +42,9 @@ public:
 };
 
 /**
- * This will be our result
+ * This will be our 'individual'
  */
-class Knapsack {
+class Knapsack : public Individual {
     int value;
     int weight;
     int maxWeight;
@@ -54,6 +55,10 @@ public:
     void add(KnapsackItem i);
     int getValue();
     int getWeight();
+};
+
+class KnapsackFactory : public IndividualFactory {
+
 };
 
 
