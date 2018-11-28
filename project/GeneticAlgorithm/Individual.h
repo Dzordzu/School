@@ -17,7 +17,7 @@ protected:
 public:
     virtual void crossWith(Individual * i) = 0;
     virtual void mutate() = 0;
-    virtual Fitness getIndividualFitness();
+    virtual Fitness * getIndividualFitness();
 };
 
 /**
