@@ -25,6 +25,7 @@ public:
  */
 class IndividualFactory {
 public:
+    virtual void prepareRandom();
     virtual Individual * build();
     virtual void clear();
 };
