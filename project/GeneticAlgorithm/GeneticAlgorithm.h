@@ -17,6 +17,7 @@ class GeneticAlgorithm {
     float crossingProbability;
     std::vector<Gene *> genes;
     StopCondition stopCondition;
+    IndividualFactory * individualFactory;
 
 public:
     void setMutationProbability(float probability);
@@ -24,6 +25,7 @@ public:
     void setGenes(const std::vector<Gene*> &genes);
     std::vector<Gene *> getGenes();
     void setStopCondition(StopCondition stopCondition);
+    void setIndividualFactory(IndividualFactory * individualFactory);
     Individual * getResult();
     void init();
 };

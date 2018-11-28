@@ -23,3 +23,7 @@ std::vector<Gene *> GeneticAlgorithm::getGenes() {
 void GeneticAlgorithm::setStopCondition(StopCondition stopCondition) {
     this->stopCondition = stopCondition;
 }
+
+void GeneticAlgorithm::setIndividualFactory(IndividualFactory *individualFactory) {
+    this->individualFactory = individualFactory;
+}
