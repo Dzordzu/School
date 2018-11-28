@@ -9,10 +9,16 @@
 #include <cstdint>
 #include "Fitness.h"
 
+class StopConditionException : public std::exception {
+public:
+    const char* what() const noexcept;
+};
+
 class StopCondition {
 
 public:
     enum class Type {
+        UNINITIALIZED,
         ITERATION,
         TIME,
         FITNESS_FUNCTION,
@@ -25,6 +31,7 @@ private:
     Fitness valueFitness;
 
 public:
+    StopCondition();
     StopCondition(Type type, uint64_t value);
     StopCondition(Type type, Fitness valueFitness);
 public:
