@@ -19,5 +19,13 @@ public:
     virtual Fitness getFitness();
 };
 
+/**
+ * Used in population generation process
+ */
+class IndividualFactory {
+public:
+    virtual Individual * buildIndividual();
+};
+
 
 #endif //SCHOOL_INDIVIDUAL_H

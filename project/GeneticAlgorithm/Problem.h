@@ -12,6 +12,7 @@
 
 class Problem {
     std::vector<Individual *> population;
+    IndividualFactory * individualFactory;
     Individual * bestSolution;
     uint32_t geneticOperations;
 
