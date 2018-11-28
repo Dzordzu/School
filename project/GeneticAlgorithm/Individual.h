@@ -12,6 +12,7 @@
  * Derivatives should somehow store genes (I really don't care how)
  */
 class Individual {
+protected:
     Fitness * individualFitness;
 public:
     virtual void crossWith(Individual * i) = 0;
