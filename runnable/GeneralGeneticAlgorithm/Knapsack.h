@@ -36,8 +36,6 @@ public:
  * Knapsack Items will be our genes
  */
 class KnapsackItem : public Gene {
-    int weight;
-    int value;
     friend class Knapsack;
 public:
     KnapsackItem(int weight, int value);
@@ -48,8 +46,6 @@ public:
  * This will be our 'individual'
  */
 class Knapsack : public Individual {
-    int value;
-    int weight;
     int maxWeight;
     std::vector<KnapsackItem> items;
 
