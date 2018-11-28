@@ -57,7 +57,10 @@ public:
 };
 
 class KnapsackFactory : public IndividualFactory {
-
+public:
+    void prepareRandom();
+    Individual * build();
+    void clear();
 };
 
 

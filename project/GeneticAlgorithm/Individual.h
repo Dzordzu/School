@@ -17,7 +17,7 @@ protected:
 public:
     virtual void crossWith(Individual * i) = 0;
     virtual void mutate() = 0;
-    virtual Fitness * getIndividualFitness();
+    virtual Fitness * getIndividualFitness() = 0;
 };
 
 /**
@@ -25,9 +25,9 @@ public:
  */
 class IndividualFactory {
 public:
-    virtual void prepareRandom();
-    virtual Individual * build();
-    virtual void clear();
+    virtual void prepareRandom() = 0;
+    virtual Individual * build() = 0;
+    virtual void clear() = 0;
 };
 
 
