@@ -24,7 +24,8 @@ public:
  */
 class IndividualFactory {
 public:
-    virtual Individual * buildIndividual();
+    virtual Individual * build();
+    virtual void clear();
 };
 
 
