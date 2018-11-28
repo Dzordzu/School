@@ -25,9 +25,9 @@ int Knapsack::getWeight() {
 KnapsackItem::KnapsackItem(int weight, int value) {
     this->weight = weight;
     this->value = value;
-    this->unitFitness = new KnapsackFitness(weight, value);
+    this->geneFitness = new KnapsackFitness(weight, value);
 }
 
-Fitness * KnapsackItem::getUnitFitness() {
-    return this->unitFitness;
+Fitness * KnapsackItem::getGeneFitness() {
+    return this->geneFitness;
 }

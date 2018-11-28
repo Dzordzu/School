@@ -12,11 +12,11 @@
  * Derivatives should somehow store genes (I really don't care how)
  */
 class Individual {
-    Fitness fitness;
+    Fitness * individualFitness;
 public:
     virtual void crossWith(Individual * i) = 0;
     virtual void mutate() = 0;
-    virtual Fitness getFitness();
+    virtual Fitness getIndividualFitness();
 };
 
 /**

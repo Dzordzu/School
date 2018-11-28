@@ -22,6 +22,9 @@ public:
         this->value = weight < 20 ? value : 0;
     }
 
+    int getValue() const { return value; }
+    int getWeight() const { return weight; }
+
     bool operator==(const KnapsackFitness &f) { return this->value == f.value; }
     bool operator>(const KnapsackFitness &f) { return this->value > f.value; }
     bool operator<(const KnapsackFitness &f) { return this->value < f.value; }
@@ -38,7 +41,7 @@ class KnapsackItem : public Gene {
     friend class Knapsack;
 public:
     KnapsackItem(int weight, int value);
-    Fitness * getUnitFitness() override;
+    Fitness * getGeneFitness() override;
 };
 
 /**
