@@ -25,12 +25,12 @@ void BinaryIndividual::crossWith(Individual *i) {
         /*
          * Fast implementation of the std::copy
          */
-        for(int j = 0; j<genotype.size()/2; j++) {
+        for(uint_fast64_t j = 0; j<genotype.size()/2; j++) {
             child1Genotype.push_back(this->genotype[j]);
             child2Genotype.push_back(casted->genotype[j]);
         }
 
-        for(int j = genotype.size()/2; j<genotype.size(); j++) {
+        for(uint_fast64_t j = genotype.size()/2; j<genotype.size(); j++) {
             child1Genotype.push_back(casted->genotype[j]);
             child2Genotype.push_back(this->genotype[j]);
         }
