@@ -20,6 +20,7 @@ int main() {
     GA.setMutationProbability(0.1);
     GA.setCrossingProbability(0.5);
 
+    GA.setIndividualFactory();
     GA.setGenes(genes);
 
     GA.init();

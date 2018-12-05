@@ -6,8 +6,12 @@
 #define SCHOOL_KNAPSACK_H
 
 #include <vector>
+#include <Individual.h>
 #include "Gene.h"
 
+/**
+ * Our fitness class
+ */
 class KnapsackFitness : public Fitness {
     int value;
     int weight;
@@ -18,6 +22,9 @@ public:
         this->value = weight < 20 ? value : 0;
     }
 
+    int getValue() const { return value; }
+    int getWeight() const { return weight; }
+
     bool operator==(const KnapsackFitness &f) { return this->value == f.value; }
     bool operator>(const KnapsackFitness &f) { return this->value > f.value; }
     bool operator<(const KnapsackFitness &f) { return this->value < f.value; }
@@ -25,18 +32,20 @@ public:
     bool operator<=(const KnapsackFitness &f) { return *this<f || *this == f; }
 };
 
+/**
+ * Knapsack Items will be our genes
+ */
 class KnapsackItem : public Gene {
-    int weight;
-    int value;
     friend class Knapsack;
 public:
     KnapsackItem(int weight, int value);
-    Fitness * getUnitFitness() override;
+    Fitness * getGeneFitness() override;
 };
 
-class Knapsack {
-    int value;
-    int weight;
+/**
+ * This will be our 'individual'
+ */
+class Knapsack : public Individual {
     int maxWeight;
     std::vector<KnapsackItem> items;
 
@@ -45,6 +54,13 @@ public:
     void add(KnapsackItem i);
     int getValue();
     int getWeight();
+};
+
+class KnapsackFactory : public IndividualFactory {
+public:
+    void prepareRandom();
+    Individual * build();
+    void clear();
 };
 
 

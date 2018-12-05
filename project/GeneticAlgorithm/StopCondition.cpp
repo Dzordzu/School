@@ -15,13 +15,24 @@ StopCondition::StopCondition(StopCondition::Type type, Fitness valueFitness) {
 }
 
 StopCondition::Type StopCondition::getType() {
+    if(this->type == StopCondition::Type::UNINITIALIZED) throw StopConditionException();
     return this->type;
 }
 
 bool StopCondition::isFulfilled(Fitness &other) {
+    if(this->type == StopCondition::Type::UNINITIALIZED) throw StopConditionException();
     return this->valueFitness > other;
 }
 
+StopCondition::StopCondition() {
+    this->type = StopCondition::Type::UNINITIALIZED;
+}
+
 bool StopCondition::isFulfilled(uint32_t &other) {
+    if(this->type == StopCondition::Type::UNINITIALIZED) throw StopConditionException();
     return this->valueInt > other;
+}
+
+const char *StopConditionException::what() const noexcept {
+    return "StopCondition is not set";
 }

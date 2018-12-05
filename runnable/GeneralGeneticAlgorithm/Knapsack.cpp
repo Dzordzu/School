@@ -6,12 +6,25 @@
 
 void Knapsack::add(KnapsackItem i) {
     items.push_back(i);
-    value += i.value;
-    weight += i.weight;
+
+    /**
+     * Cast Fitness to KnapsackFitness
+     */
+    KnapsackFitness * itemFitness = dynamic_cast<KnapsackFitness *>(i.getGeneFitness());
+    KnapsackFitness * individualFitness = dynamic_cast<KnapsackFitness *>(this->individualFitness);
+
+    /**
+     * Apply new values
+     */
+    this->individualFitness = new KnapsackFitness(
+            individualFitness->getWeight() + itemFitness->getWeight(),
+            individualFitness->getValue() + itemFitness->getValue()
+            );
 }
 
 int Knapsack::getValue() {
-    return value;
+    auto * individualFitness = dynamic_cast<KnapsackFitness *>(this->individualFitness);
+    return individualFitness->getValue();
 }
 
 Knapsack::Knapsack(int maxWeight) {
@@ -19,15 +32,14 @@ Knapsack::Knapsack(int maxWeight) {
 }
 
 int Knapsack::getWeight() {
-    return weight;
+    KnapsackFitness * individualFitness = dynamic_cast<KnapsackFitness *>(this->individualFitness);
+    return individualFitness->getWeight();
 }
 
 KnapsackItem::KnapsackItem(int weight, int value) {
-    this->weight = weight;
-    this->value = value;
-    this->unitFitness = new KnapsackFitness(weight, value);
+    this->geneFitness = new KnapsackFitness(weight, value);
 }
 
-Fitness * KnapsackItem::getUnitFitness() {
-    return this->unitFitness;
+Fitness * KnapsackItem::getGeneFitness() {
+    return this->geneFitness;
 }
