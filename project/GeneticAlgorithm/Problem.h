@@ -9,6 +9,7 @@
 #include <vector>
 #include <array>
 #include "Individual.h"
+#include <RandomWrapper.h>
 
 class Problem {
     std::vector<Individual *> population;
@@ -16,7 +17,7 @@ class Problem {
     Individual * bestSolution;
     uint32_t geneticOperations;
 
-    void generateRandomPopulation();
+    void generateRandomPopulation(uint_fast32_t populationSize);
     void crossRandom();
 
 //    TODO - Implement
