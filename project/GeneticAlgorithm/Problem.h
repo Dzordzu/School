@@ -15,7 +15,7 @@ class Problem {
     std::vector<Individual *> population;
     IndividualFactory * individualFactory;
     Individual * bestSolution;
-    uint32_t geneticOperations;
+    uint32_t geneticOperations = 0;
 
     void generateRandomPopulation(uint_fast32_t populationSize);
     void crossRandom();
