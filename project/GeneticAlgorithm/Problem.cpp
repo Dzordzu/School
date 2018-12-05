@@ -16,4 +16,5 @@ void Problem::crossRandom() {
     uint_fast32_t i1 = Utils::RandomWrapper::getRandom<uint_fast32_t >(0, population.size());
     uint_fast32_t i2 = Utils::RandomWrapper::getRandom<uint_fast32_t >(0, population.size());
     population[i1]->crossWith(population[i2]);
+    geneticOperations++;
 }
